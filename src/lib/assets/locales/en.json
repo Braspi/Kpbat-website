@@ -1,5 +1,8 @@
 {
-  "page_title": "Page title",
-  "sign_in": "Sign in",
-  "sign_up": "Sign up"
+  "nav": {
+    "gallery": "Gallery",
+    "home" : "Home",
+    "contact" : "Contact",
+    "language": "Choose language"
+  }
 }
