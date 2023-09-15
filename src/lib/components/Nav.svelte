@@ -1,13 +1,16 @@
-<script>
+<script lang="ts">
     import { _ } from 'svelte-i18n'
+    let navDetached = true;
 
-    // function onScroll() {
-    //     let header = document.getElementById('nav').getBoundingClientRect();
-    //     this.navDetached = (header.height / 8) > window.pageYOffset;
-    // }
+    function onScroll() {
+        let header = document.getElementById('nav')?.getBoundingClientRect() as DOMRect;
+        navDetached = (header.height / 8) > window.scrollY;
+    }
+
+    $: navDetachedClass = navDetached ? '' : 'bg-dark shadow-nav';
 </script>
 
-<div id="nav" class="w-full h-28 text-dark fixed top-0 z-10 transition bg-opacity-50 bg-dark text-light">
+<div id="nav" class="w-full h-28 fixed top-0 z-10 transition duration-500 text-light {navDetachedClass}">
     <a href="/">
         <img src="icon/logo/LOGO2_alpha.png" alt="logo" class="absolute top-0.5 -translate-y-2 select-none left-0 h-24 md:left-2 md:h-32">
     </a>
@@ -23,5 +26,7 @@
     </div>
 </div>
 
+<!-- Attach scroll to document -->
+<svelte:document on:scroll={onScroll} />
 
 <!--<div class="bg-amber-200 sm:bg-green-500 md:bg-black xl:bg-amber-950"> asdasdasd</div>-->

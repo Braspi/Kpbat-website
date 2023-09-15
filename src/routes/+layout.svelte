@@ -5,4 +5,6 @@
 </script>
 
 <Nav />
-<slot />
+<main class="h-[2000px]">
+    <slot />
+</main>

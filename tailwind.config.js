@@ -14,6 +14,9 @@ export default {
         navHeight: '7rem',
         footerHeight: '20rem',
         sitebarWidth: '16rem'
+      },
+      boxShadow: {
+        'nav': '0px 1px 10px black'
       }
     },
   },
