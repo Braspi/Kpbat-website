@@ -30,8 +30,12 @@
             <a href="/" class="mt-14 ml-16 text-2xl no-underline uppercase hover:text-hoverColor transition duration-100">{$_('nav.contact')}</a>
         </div>
         <div class="absolute right-8 h-24 flex justify-around w-28 md:h-28 md:top-9">
-            <img src="icon/flags/france.webp" alt="france-flag" class="w-14 h-9 p-1.5 cursor-pointer select-none hover:brightness-50" on:click={() => changeLang("fr")}>
-            <img src="icon/flags/united_kingdom.webp" alt="english-flag" class="w-14 h-9 p-1.5 cursor-pointer select-none hover:brightness-50" on:click={() => changeLang("en")}>
+            <div role="button" tabindex="0" on:click={() => changeLang("fr")} on:keypress={() => changeLang("fr")} class="w-14 h-9 p-1.5 cursor-pointer select-none hover:brightness-50">
+                <img src="icon/flags/france.webp" alt="france-flag" class="w-full h-full">
+            </div>
+            <div role="button" tabindex="0" on:click={() => changeLang("en")} on:keypress={() => changeLang("en")} class="w-14 h-9 p-1.5 cursor-pointer select-none hover:brightness-50">
+                <img src="icon/flags/united_kingdom.webp" alt="english-flag" class="w-full h-full">
+            </div>
         </div>
     </div>
 
