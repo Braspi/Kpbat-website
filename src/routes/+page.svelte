@@ -7,18 +7,16 @@
         rewind: true,
         width: '100vw',
         height: '100vh',
-        gap: '2rem',
         autoplay: true,
     }
 </script>
 
 <main>
     <Splide {options}>
-        { #each slides as slide }
+        {#each slides as slide}
             <SplideSlide>
-                <img src="" class="bg-contain bg-center" style='background-image: url("/{ slide.src }")'/>
-<!--                <img src="{ slide.src }" alt={ slide.alt } class="brightness-50 h-full w-full bg-cover"/>-->
+                <img src={slide.src} alt={slide.alt} class="brightness-50 h-screen w-screen bg-center object-cover"/>
             </SplideSlide>
-        { /each }
+        {/each}
     </Splide>
 </main>
