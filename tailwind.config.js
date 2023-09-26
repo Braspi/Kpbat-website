@@ -17,7 +17,7 @@ export default {
       },
       boxShadow: {
         'nav': '0px 1px 10px black'
-      }
+      },
     },
   },
   plugins: []

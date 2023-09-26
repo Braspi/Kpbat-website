@@ -11,6 +11,9 @@ dependencies:
   '@fortawesome/free-solid-svg-icons':
     specifier: ^6.4.2
     version: 6.4.2
+  '@splidejs/svelte-splide':
+    specifier: ^0.2.9
+    version: 0.2.9
   svelte-i18n:
     specifier: ^3.7.4
     version: 3.7.4(svelte@4.2.0)
@@ -639,6 +642,16 @@ packages:
   /@polka/url@1.0.0-next.23:
     resolution: {integrity: sha512-C16M+IYz0rgRhWZdCmK+h58JMv8vijAA61gmz2rspCSwKwzBebpdcsiUmwrtJRdphuY30i6BSLEOP8ppbNLyLg==}
     dev: true
+
+  /@splidejs/splide@4.1.4:
+    resolution: {integrity: sha512-5I30evTJcAJQXt6vJ26g2xEkG+l1nXcpEw4xpKh0/FWQ8ozmAeTbtniVtVmz2sH1Es3vgfC4SS8B2X4o5JMptA==}
+    dev: false
+
+  /@splidejs/svelte-splide@0.2.9:
+    resolution: {integrity: sha512-04ekJnDIJKEAhklKQMhkg4Yx0Ihtkk18eA9JeHPON0lDTngQxlOYdEYTJWH2UON45VxmVqoLHv04I++JphO36w==}
+    dependencies:
+      '@splidejs/splide': 4.1.4
+    dev: false
 
   /@sveltejs/adapter-auto@2.1.0(@sveltejs/kit@1.24.1):
     resolution: {integrity: sha512-o2pZCfATFtA/Gw/BB0Xm7k4EYaekXxaPGER3xGSY3FvzFJGTlJlZjBseaXwYSM94lZ0HniOjTokN3cWaLX6fow==}
