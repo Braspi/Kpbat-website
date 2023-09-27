@@ -4,5 +4,10 @@
     "home" : "Home",
     "contact" : "Contact",
     "language": "Choose language"
+  },
+  "footer": {
+    "home" : "Home",
+    "gallery": "Gallery",
+    "contact" : "Contact"
   }
 }
