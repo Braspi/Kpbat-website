@@ -7,6 +7,4 @@
 </script>
 
 <Nav />
-<main class="h-[2000px]">
-    <slot />
-</main>
+<slot />
