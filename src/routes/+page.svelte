@@ -4,6 +4,8 @@
     import { Splide, SplideSlide, type Options } from '@splidejs/svelte-splide';
     export let data;
 
+    let width: number;
+
     let slides = data.slides;
     let options: Options = {
         rewind: true,
@@ -11,6 +13,8 @@
         height: '100vh',
         autoplay: true,
     }
+
+    $: (width <= 768) ? options.arrows = false : options.arrows = true;
 </script>
 
 <main class="relative z-0">
@@ -26,3 +30,6 @@
         {/each}
     </Splide>
 </main>
+
+
+<svelte:window bind:outerWidth={width} />

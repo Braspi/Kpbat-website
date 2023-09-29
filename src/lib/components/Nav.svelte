@@ -4,7 +4,7 @@
     import { faBars } from '@fortawesome/free-solid-svg-icons';
 
     let navDetached = true;
-    let showBurgerDiv: boolean = true;
+    let showBurgerDiv: boolean = false;
 
     function onScroll() {
         let header = document.getElementById('nav')?.getBoundingClientRect() as DOMRect;
