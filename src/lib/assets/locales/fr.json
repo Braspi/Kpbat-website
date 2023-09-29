@@ -8,5 +8,10 @@
     "home": "Accueil",
     "contact": "Contact",
     "language": "Choisissez la langue"
+  },
+  "footer": {
+    "home" : "Accueil",
+    "gallery": "Galerie",
+    "contact" : "Contact"
   }
 }
