@@ -1,6 +1,10 @@
 <script lang="ts">
+    import { _ } from 'svelte-i18n'
+
     import { Splide, SplideSlide, type Options } from '@splidejs/svelte-splide';
     export let data;
+
+    let width: number;
 
     let slides = data.slides;
     let options: Options = {
@@ -9,9 +13,15 @@
         height: '100vh',
         autoplay: true,
     }
+
+    $: (width <= 768) ? options.arrows = false : options.arrows = true;
 </script>
 
-<main>
+<main class="relative z-0">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center">
+        <h1 class="text-white text-2xl font-semibold md:text-4xl lg:text-6xl whitespace-nowrap">{$_('header.main')}</h1>
+        <h2 class="text-white text-base md:text-xl lg:text-2xl">{$_('header.bottom')}</h2>
+    </div>
     <Splide {options}>
         {#each slides as slide}
             <SplideSlide>
@@ -20,3 +30,6 @@
         {/each}
     </Splide>
 </main>
+
+
+<svelte:window bind:outerWidth={width} />

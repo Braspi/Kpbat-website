@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://kpbat.com/sitemap.xml
+Crawl-delay: 5
