@@ -8,7 +8,8 @@ export default {
         dark: '#2A2A2A',
         hoverColor: '#5f5f5f',
         hoverColorDark: '#999999',
-        darkAlpha: '#2A2A2A91'
+        darkAlpha: '#2A2A2A91',
+        mediaColor: '#3b3b3b'
       },
       width: {
         navHeight: '7rem',
