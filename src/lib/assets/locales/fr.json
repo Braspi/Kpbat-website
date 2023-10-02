@@ -9,6 +9,28 @@
     "contact": "Contact",
     "language": "Choisissez la langue"
   },
+  "form": {
+    "header": "Envoyez-nous un message",
+    "description": "Si vous avez un problème, écrivez-nous!",
+    "form": {
+      "title": "Contactez-nous",
+      "description": "Notre formulaire de contact",
+      "name": "Prénom",
+      "surname": "Nom",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "message": "Message",
+      "privacy": "En cochant cette case, vous acceptez notre",
+      "privacy-link": "politique de confidentialité",
+      "submit": "Envoyer"
+    },
+    "details": {
+      "title": "Contactez-nous",
+      "description": "Détails du contact",
+      "phone": "contact par téléphone",
+      "email": "contact par e-mail"
+    }
+  },
   "footer": {
     "home" : "Accueil",
     "gallery": "Galerie",
