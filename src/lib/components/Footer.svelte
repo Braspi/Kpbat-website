@@ -2,7 +2,6 @@
     import { _ } from 'svelte-i18n'
 
     import Fa from 'svelte-fa';
-    import {  } from '@fortawesome/free-solid-svg-icons';
     import { faFacebook, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons';
 
 </script>
