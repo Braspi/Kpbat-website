@@ -20,8 +20,8 @@ export default {
         'nav': '0px 1px 10px black'
       },
       height: {
-        '128': '32rem',
-      }
+        '128': '30rem',
+      },
     },
   },
   plugins: []
