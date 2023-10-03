@@ -22,6 +22,10 @@ export default {
       height: {
         '128': '30rem',
       },
+      flex: {
+        '1/2': '0 0 50%',
+        '2/2': '0 0 100%',
+      }
     },
   },
   plugins: []
