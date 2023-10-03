@@ -42,8 +42,8 @@
         </div>
     </div>
 
-    <div class="block md:hidden relative z-40" on:click={showBurger} on:keypress={showBurger} role="button" tabindex="0">
-        <Fa icon={faBars} size="3x" class="absolute top-2 right-4 cursor-pointer"/>
+    <div class="block md:hidden relative z-40 h-full" on:click={showBurger} on:keypress={showBurger} role="button" tabindex="0">
+        <Fa icon={faBars} size="3x" class="absolute top-1/2 -translate-y-1/2 right-8 cursor-pointer"/>
     </div>
 
     {#if showBurgerDiv}
