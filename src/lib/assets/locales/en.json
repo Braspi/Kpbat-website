@@ -9,6 +9,15 @@
     "contact" : "Contact",
     "language": "Choose language"
   },
+  "services": {
+    "header": "Our Services",
+    "description": "We provide services and products that set high standards for quality, reliability, durability.",
+    "sections": {
+      "exterior": "Exterior Renovation",
+      "interior": "Interior Renovation",
+      "energy": "Energy Renovation"
+    }
+  },
   "form": {
     "header": "Get in Touch with Us",
     "description": "If you have any questions, please write to us!",

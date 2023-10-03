@@ -9,6 +9,15 @@
     "contact": "Contact",
     "language": "Choisissez la langue"
   },
+  "services": {
+    "header": "Nos services",
+    "description": "Nous fournissons des services et des produits qui établissent des normes élevées de qualité, de fiabilité et de durabilité.",
+    "sections": {
+      "exterior": "Rénovation Extérieur",
+      "interior": "Rénovation Intérieur",
+      "energy": "Rénovation Énergétique"
+    }
+  },
   "form": {
     "header": "Envoyez-nous un message",
     "description": "Si vous avez un problème, écrivez-nous!",
