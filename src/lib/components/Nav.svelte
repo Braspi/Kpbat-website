@@ -42,12 +42,12 @@
         </div>
     </div>
 
-    <div class="block md:hidden relative z-40" on:click={showBurger} on:keypress={showBurger} role="button" tabindex="0">
-        <Fa icon={faBars} size="3x" class="absolute top-2 right-4 cursor-pointer"/>
+    <div class="block md:hidden absolute top-1/2 -translate-y-1/2 right-8 z-40 cursor-pointer" on:click={showBurger} on:keypress={showBurger} role="button" tabindex="0">
+        <Fa icon={faBars} size="3x"/>
     </div>
 
     {#if showBurgerDiv}
-        <div class="w-screen h-screen bg-dark absolute z-30 flex flex-col items-center justify-around">
+        <div class="w-screen h-screen bg-dark absolute top-0 z-30 flex flex-col items-center justify-around">
             <div class="flex flex-col w-max text-center gap-7">
                 <a href="/" class="mt-10 text-4xl no-underline uppercase hover:text-hoverColor transition duration-100">{$_('nav.home')}</a>
                 <a href="/gallery" class="mt-10 text-4xl no-underline uppercase hover:text-hoverColor transition duration-100">{$_('nav.gallery')}</a>

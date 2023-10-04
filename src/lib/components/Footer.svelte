@@ -21,16 +21,17 @@
         <a href="https://www.pinterest.fr/kp_bat/" class="w-10 h-10 bg-mediaColor md:w-11 md:h-11 lg:w-14 lg:h-14 rounded hover:scale-110 transform transition-transform duration-300"><Fa icon="{ faPinterest }" class="text-white ml-2 mt-2 md:ml-2 md:mt-2 lg:ml-2.5 lg:mt-2.5"/></a>
     </div>
     <hr class="absolute left-1/2 -translate-x-1/2 border-t-2 w-[85%] top-[47%] sm:w-[91%] sm:top-[65%] md:top-[75%]">
-        <div class="absolute left-1/2 -translate-x-1/2 text-ms bottom-24 font-medium text-center sm:text-left sm:w-[52%] sm:left-[30%] sm:bottom-4 sm:text-xs sm:font-normal md:bottom-8 md:left-[31%] lg:text-sm lg:bottom-6 lg:w-[55%] lg:left-[33%] lg:font-medium xl:text-base">
-            <p class="sm:inline-block">+33 6 38 61 77 95</p>
-            <p class="sm:inline-block">contact@kpbat.com</p>
-            <div class="text-center mt-1 text-xs sm:mt-0 sm:text-left md:whitespace-nowrap">
-                <p class="sm:inline-block">SASU KP BAT - <span class="underline"><a href="https://maps.app.goo.gl/5Z5Kp3jBmEkJALSX7">85 Boulevard du Général Leclerc</a></span>, 92000 Nanterre, France</p>
-                <p class="font-medium mt-3 sm:mt-0 sm:hidden lg:inline-block">SIREN - 898 355 763</p>
-            </div>
+    <div class="absolute left-1/2 -translate-x-1/2 text-ms bottom-24 font-medium text-center sm:text-left sm:w-[52%] sm:left-[30%] sm:bottom-4 sm:text-xs sm:font-normal md:bottom-8 md:left-[31%] lg:text-sm lg:bottom-6 lg:w-[55%] lg:left-[33%] lg:font-medium xl:text-base">
+        <p class="sm:inline-block">+33 6 38 61 77 95</p>
+        <p class="sm:inline-block">contact@kpbat.com</p>
+        <div class="text-center mt-1 text-xs sm:mt-0 sm:text-left md:whitespace-nowrap">
+            <p class="sm:inline-block">SASU KP BAT - <span class="underline"><a href="https://maps.app.goo.gl/5Z5Kp3jBmEkJALSX7">85 Boulevard du Général Leclerc</a></span>, 92000 Nanterre, France</p>
+            <p class="font-medium mt-3 sm:mt-0 sm:hidden lg:inline-block">SIREN - 898 355 763</p>
         </div>
+    </div>
     <div class="absolute left-1/2 -translate-x-1/2 font-medium text-center text-xs w-[60%] bottom-8 sm:left-[75%] sm:text-end sm:w-[40%] lg:text-sm lg:w-[30%] lg:left-[80%] lg:bottom-6 xl:w-[23%] xl:left-[83%]">
-        <p class="">&copy; 2022 - { new Date().getFullYear() } KP BAT. All Rights Reserved <p> Design and code -
-            <a href="https://ycode.ovh" class="underline">ycode.ovh</a>
+        <p>&copy; 2022 - { new Date().getFullYear() } KP BAT. All Rights Reserved </p>
+        <span>Design and code -</span>
+        <a href="https://ycode.ovh" class="underline">ycode.ovh</a>
     </div>
 </div>
