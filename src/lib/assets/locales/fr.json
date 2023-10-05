@@ -40,6 +40,14 @@
       "email": "contact par e-mail"
     }
   },
+  "about": {
+    "name": "Oui sommes nous?",
+    "title": "Votre entreprise spécialisée dans la rénovation.",
+    "line1": "Vous cherchez à rénover votre intérieur pour donner une nouvelle vie à votre maison ou votre appartement ? Faites confiance à KP BAT.",
+    "line2": "Nous mettons à votre disposition une équipe de professionnels qualifiés et expérimentés pour réaliser tous vos projets de rénovation, du simple rafraîchissement de peinture à la rénovation complète.",
+    "line3": "Nous vous proposons une large gamme de services pour répondre à tous vos besoins peinture, revêtement de sol, plomberie, électricité, menuiserie, aménagement de cuisine et salle de bain, etc.",
+    "line4": "Nous travaillons avec des matériaux de qualité supérieure pour garantir un résultat durable et esthétique. Nous sommes à l'écoute de vos besoins et de vos attentes pour vous offrir une prestation sur mesure, adaptée à votre budget et à vos contraintes."
+  },
   "footer": {
     "home" : "Accueil",
     "gallery": "Galerie",

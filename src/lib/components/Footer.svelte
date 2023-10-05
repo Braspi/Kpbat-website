@@ -6,7 +6,7 @@
 
 </script>
 
-<div class="w-full bg-dark text-light relative h-128 sm:h-52 md:h-72" >
+<section class="w-full bg-dark text-light relative h-128 sm:h-52 md:h-72" >
     <a href="/" >
         <img src="icon/logo/LOGO3.jpg" alt="logo-left" class="absolute w-32 left-[10%] top-[7%] sm:left-[5%] md:w-40 lg:w-44 lg:h-36 md:top-10 md:inline-block">
     </a>
@@ -34,4 +34,4 @@
         <span>Design and code -</span>
         <a href="https://ycode.ovh" class="underline">ycode.ovh</a>
     </div>
-</div>
+</section>
