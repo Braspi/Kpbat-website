@@ -2,7 +2,7 @@
 import {_} from "svelte-i18n";
 </script>
 
-<section class="w-screen min-h-[70vh] xl:mb-0 bg-dark text-light">
+<section class="min-h-[70vh] xl:mb-0 bg-dark text-light">
     <div class="flex flex-col lg:flex-row">
       <div class="flex-[3] ml-[10%] mr-[10%] mt-[6%] lg:mr-0 ">
         <h2 class="font-extrabold text-lg tracking-widest leading-8 uppercase mb-2 2xl:text-xl">{$_('about.name')}</h2>
