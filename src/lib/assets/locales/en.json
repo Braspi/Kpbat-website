@@ -11,15 +11,15 @@
   },
   "about": {
     "name": "Who are we?",
-    "title": "Our company specializes in renovation.",
+    "header": "Our company specializes in renovation.",
     "line1": "Are you looking to renovate your interior to give a new life to your house or apartment? Trust KP BAT.",
     "line2": "We provide you with a team of qualified and experienced professionals to carry out all your renovation projects, from simple painting refreshes to complete renovations.",
     "line3": "We offer a wide range of services to meet all your needs: painting, flooring, plumbing, electricity, carpentry, kitchen and bathroom design, etc.",
     "line4": "We work with high-quality materials to ensure a durable and aesthetic result. We listen to your needs and expectations to offer you a tailor-made service that is adapted to your budget and constraints."
   },
-  "gallery": {
-    "title": "Our lastest works",
-    "desc": "Browse our gallery, and see why we're worthy of your trust!",
+  "gallery-sec": {
+    "header": "Our lastest works",
+    "description": "Browse our gallery, and see why we're worthy of your trust!",
     "btn": "Check All"
   },
   "services": {
@@ -57,5 +57,9 @@
     "home" : "Home",
     "gallery": "Gallery",
     "contact" : "Contact"
+  },
+  "gallery": {
+    "header": "Select categories",
+    "description" : "Browse our gallery, and see why we're worthy of your trust!"
   }
 }

@@ -2,6 +2,10 @@
     import { _ } from 'svelte-i18n'
 
     import { Splide, SplideSlide, type Options } from '@splidejs/svelte-splide';
+    import ServicesSection from "$lib/components/sections/ServicesSection.svelte";
+    import About from "$lib/components/sections/AboutSection.svelte";
+    import FormSection from "$lib/components/sections/FormSection.svelte";
+    import GallerySection from "$lib/components/sections/GallerySection.svelte";
     export let data;
 
     let width: number;
@@ -31,5 +35,9 @@
     </Splide>
 </main>
 
+<About />
+<GallerySection />
+<ServicesSection />
+<FormSection/>
 
 <svelte:window bind:outerWidth={width} />

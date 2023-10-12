@@ -6,7 +6,7 @@ import {_} from "svelte-i18n";
     <div class="flex flex-col lg:flex-row">
       <div class="flex-[3] ml-[10%] mr-[10%] mt-[6%] lg:mr-0 ">
         <h2 class="font-extrabold text-lg tracking-widest leading-8 uppercase mb-2 2xl:text-xl">{$_('about.name')}</h2>
-        <h3 class="not-italic font-bold text-4xl mb-7 2xl:text-5xl">{$_('about.title')}</h3>
+        <h3 class="not-italic font-bold text-4xl mb-7 2xl:text-5xl">{$_('about.header')}</h3>
         <p class="font-normal text-lg lg:text-base 2xl:text-2xl">
           {$_('about.line1')}
           <br> <br>

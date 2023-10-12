@@ -2,11 +2,24 @@
     import { _, locale } from 'svelte-i18n'
     import Fa from 'svelte-fa';
     import { faBars } from '@fortawesome/free-solid-svg-icons';
+    import { page } from "$app/stores";
+    import {onMount} from "svelte";
 
     let navDetached = true;
     let showBurgerDiv: boolean = false;
 
+    onMount(()=> {
+        page.subscribe(() =>{
+            if($page.url.pathname.includes('gallery')){
+                navDetached = false;
+                return
+            }
+            onScroll()
+        })
+    })
+
     function onScroll() {
+        if($page.url.pathname.includes('gallery')){return}
         let header = document.getElementById('nav')?.getBoundingClientRect() as DOMRect;
         navDetached = (header.height / 8) > window.scrollY;
     }

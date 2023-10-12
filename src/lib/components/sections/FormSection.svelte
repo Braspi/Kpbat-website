@@ -31,7 +31,7 @@
     // TODO: Add api for sending emails
 </script>
 
-<section class="min-h-screen mb-12 xl:mb-0">
+<section class="min-h-screen mb-12 xl:mb-0" id="contact">
     <div class="m-auto my-10 text-center">
         <h2 class="text-2xl md:text-4xl lg:text-5xl font-light text-dark">{$_("form.header")}</h2>
         <h3 class="text-sm md:text-xl lg:text-2xl text-dark">{$_("form.description")}</h3>
