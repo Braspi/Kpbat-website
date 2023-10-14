@@ -1,14 +1,39 @@
-<script>
-    import { page } from '$app/stores';
-    import {onMount} from "svelte";
+<!--<script lang="ts">-->
+<!--    import { Splide, SplideSlide } from '@splidejs/svelte-splide';-->
+<!--    import { onMount } from 'svelte';-->
+<!--    import { generateGallery } from "$lib/utils/generateMainGallery";-->
 
-    onMount(()=> {
-        fetch(`https://api.kpbat.com/v1/gallery/categories/${$page.params.id}`)
-            .then(response => response.json())
-            .then(data => {
-                console.log(data)
-            }).catch(error => {
-            console.log(error);
-        });
-    })
-</script>
+<!--    let main: Splide;-->
+<!--    let thumbs: SplideSlide;-->
+
+<!--    const slides = generateGallery();-->
+
+<!--    const thumbsOptions = {-->
+<!--        type        : 'slide',-->
+<!--        rewind      : true,-->
+<!--        gap         : '1rem',-->
+<!--        pagination  : false,-->
+<!--        fixedWidth  : 110,-->
+<!--        fixedHeight : 70,-->
+<!--        cover       : true,-->
+<!--        focus       : 'center' as const,-->
+<!--        isNavigation: true,-->
+<!--        updateOnMove: true,-->
+<!--    };-->
+
+<!--    onMount( () => {-->
+<!--        if ( main && thumbs ) {-->
+<!--            main.sync( thumbs.splide );-->
+<!--        }-->
+<!--    } );-->
+<!--</script>-->
+
+<!--<section>-->
+<!--  <Splide options={ thumbsOptions } bind:this={ thumbs }>-->
+<!--    { #each slides as slide }-->
+<!--      <SplideSlide>-->
+<!--        <img src={ slide.src } alt={ slide.alt }>-->
+<!--      </SplideSlide>-->
+<!--    { /each }-->
+<!--  </Splide>-->
+<!--</section>-->
