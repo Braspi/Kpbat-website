@@ -1,4 +1,4 @@
-import { faPlugCircleBolt , faWrench , faTrowelBricks, faTree, faPersonThroughWindow } from "@fortawesome/free-solid-svg-icons";
+import { faPlugCircleBolt , faWrench , faTrowelBricks, faTree, faPersonThroughWindow , faHouseCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 export const sections = [
   {
@@ -15,18 +15,24 @@ export const sections = [
   },
   {
     id: 3,
+    icon: faHouseCircleCheck,
+    text: "services.sections.insulation",
+    hovered: false,
+  },
+  {
+    id: 4,
     icon: faTrowelBricks,
     text: "services.sections.masonry",
     hovered: false,
   },
   {
-    id: 4,
+    id: 5,
     icon: faTree,
     text: "services.sections.flooring",
     hovered: false,
   },
   {
-    id: 5,
+    id: 6,
     icon: faPersonThroughWindow,
     text: "services.sections.windows",
     hovered: false,
