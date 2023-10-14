@@ -5,14 +5,14 @@
     let sections = s;
 </script>
 
-<section class="min-h-[60vh] pt-0.5 mb-12 xl:mb-0 bg-dark">
+<section class="min-h-[60vh] pt-0.5 mb-14 xl:mb-0 bg-dark">
     <div class="m-auto my-10 text-center">
         <h2 class="text-2xl md:text-4xl lg:text-5xl font-light text-light">{$_("services.header")}</h2>
         <h3 class="text-sm md:text-xl lg:text-2xl text-light whitespace-normal">{$_("services.description")}</h3>
     </div>
-    <div class="flex flex-col lg:flex-row flex-wrap w-full justify-center items-center">
+    <div class="flex flex-col lg:flex-row flex-wrap w-full justify-center items-center pb-10">
         {#each sections as section}
-            <div 
+            <div
                 role="button"
                 tabindex="0"
                 class="bg-white w-96 h-72 p-8 my-2 mx-1 rounded-lg flex flex-col justify-center items-center bg-center bg-scroll bg-cover"

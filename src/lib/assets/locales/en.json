@@ -26,9 +26,12 @@
     "header": "Our Services",
     "description": "We provide services and products that set high standards for quality, reliability, durability.",
     "sections": {
-      "exterior": "Exterior Renovation",
-      "interior": "Interior Renovation",
-      "energy": "Energy Renovation"
+      "electricity": "Electricity",
+      "plumbing": "Plumbing/Heating",
+      "insulation": "Interior/Exterior Insulation",
+      "masonry": "Masonry",
+      "flooring": "Flooring",
+      "windows": "Windows"
     }
   },
   "form": {

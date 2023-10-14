@@ -26,9 +26,12 @@
     "header": "Nos services",
     "description": "Nous fournissons des services et des produits qui établissent des normes élevées de qualité, de fiabilité et de durabilité.",
     "sections": {
-      "exterior": "Rénovation Extérieur",
-      "interior": "Rénovation Intérieur",
-      "energy": "Rénovation Énergétique"
+      "electricity": "Électricité",
+      "plumbing": "Plomberie/Chauffage",
+      "insulation": "Isolation Interieure/Exterieure",
+      "masonry": "Maçonnerie",
+      "flooring": "Revetement de sol",
+      "windows": "Fenêtre"
     }
   },
   "form": {
