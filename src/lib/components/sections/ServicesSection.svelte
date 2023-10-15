@@ -16,7 +16,7 @@
                 role="button"
                 tabindex="0"
                 class="bg-white w-96 h-72 p-8 my-2 mx-1 rounded-lg flex flex-col justify-center items-center bg-center bg-scroll bg-cover"
-                style="{section.hovered ? `background-image: linear-gradient(45deg, rgba(42, 42, 42,0.7) 0%, rgba(69, 69, 69, 0.7) 100%), url('/img/ourservices/${section.id}.webp')` : ''}"
+                style="{section.hovered ? `background-image: linear-gradient(45deg, rgba(42, 42, 42,0.7) 0%, rgba(69, 69, 69, 0.7) 100%), url('/img/ourservices/${section.id}.jpg')` : ''}"
                 on:mouseover={() => section.hovered = true}
                 on:focus={() => section.hovered = true}
                 on:mouseout={() => section.hovered = false}

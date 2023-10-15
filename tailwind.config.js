@@ -22,6 +22,9 @@ export default {
       height: {
         '128': '30rem',
       },
+      maxHeight: {
+        '128': '40rem',
+      },
       flex: {
         '1/2': '0 0 50%',
         '2/2': '0 0 100%',

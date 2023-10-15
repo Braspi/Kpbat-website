@@ -26,12 +26,30 @@
     "header": "Nos services",
     "description": "Nous fournissons des services et des produits qui établissent des normes élevées de qualité, de fiabilité et de durabilité.",
     "sections": {
-      "electricity": "Électricité",
-      "plumbing": "Plomberie/Chauffage",
-      "insulation": "Isolation Interieure/Exterieure",
-      "masonry": "Maçonnerie",
-      "flooring": "Revetement de sol",
-      "windows": "Fenêtre"
+      "electricity": {
+        "title": "Électricité",
+        "description": "Vous recherchez un professionnel pour une mise aux normes électrique ? Faites de notre\nentreprise pour les travaux d’électricité générale de votre maison ou de votre appartement.\nNous intervenons en neuf comme en rénovation :\nConception et installation électrique neuve\nRénovation de l’électricité de votre habitation\nMise en conformité des installations électriques\nEntretien et dépannage en électricité\nMise en service de VMC, Interphone"
+      },
+      "plumbing": {
+        "title": "Plomberie/Chauffage",
+        "description": "S&#39;occupe de vous fournir et de venir installer votre plomberie et vos sanitaires\nque ce soit pour un usage privatif ou professionnel, en même temps s&#39;occupe\nde vous fournir et de venir installer vos chaudières, chauffe-eaux et radiateurs."
+      },
+      "insulation": {
+        "title": "Interieure/Exterieure",
+        "description": "Effectue vos travaux d’isolation des murs par l’intérieur. Cette technique\nconsiste à ajouter de l’isolant (laine de verre, de roche, de liège, chanvre) à\nl’intérieur de la maison.\nNous intervenons également dans l’isolation des murs par l’extérieur. Cela\nconsiste à installer des panneaux isolants à l’extérieur de l’ensemble de la\nmaison. les isolants synthétiques (en plastique), les isolants naturels (produits\nvégétaux ou animaux, comme la laine de mouton) et les isolants minéraux,\ncomme la laine de verre."
+      },
+      "masonry": {
+        "title": "Maçonnerie",
+        "description": "Nous nous spécialisons dans Artisan maçon, Ouverture, Renforcement, Dalles\net chapes, Démolition, Travail de la pierre, Murs porteurs, Fondations,\nCouverture, Ouvertures de murs, Charpente. Notre offre comprend également\ndes consultations avec l&#39;Ingénieur"
+      },
+      "flooring": {
+        "title": "Revetement de sol",
+        "description": "Notre équipe prendra soin de votre sol. On peut parler de carrelage, parquet,\nsol lino, sol PVC, Moquette, Béton Cire... Nous veillerons à la bonne\npréparation des surfaces, à l&#39;adéquation du matériau, au respect"
+      },
+      "windows": {
+        "title": "Fenêtre",
+        "description": "La fenêtre joue un rôle essentiel et est un en élément clé de votre habitation. Toutes nos\nfenêtres, sont personnalisables (couleurs, formes, sens d&#39;ouvertures). Votre fenêtre s’intègre\nà votre façade et contribue à l&#39;harmonie de votre habitation.\n\nQue ce soit sur PVC, Bois, Aluminium ou Bois-Alu, vous pouvez choisir parmi de nombreux\nstyles, options et accessoires. Succombez également à la praticité du volet roulant, réalisez\nde belles économies d’énergie, gagnez en confort et sécurité."
+      }
     }
   },
   "form": {
