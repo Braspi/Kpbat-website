@@ -8,6 +8,15 @@
 
     let map: any;
 
+    let name: string = "";
+    let surname: string = "";
+    let email: string = "";
+    let phone: string = "";
+    let message: string = "";
+
+    let privacy: boolean = false;
+    let triedToSend: boolean = false;
+
     onMount(async () => {
         if (browser) {
             const L = await import('leaflet');
@@ -28,10 +37,27 @@
         if(map) { map.remove() }
     });
 
-    // TODO: Add api for sending emails
+    function sendForm() {
+        if (privacy) {
+            fetch("https://api.kpbat.com/v1/contact", {
+                method: "POST",
+                body: JSON.stringify({
+                    email: email,
+                    phoneNumber: phone,
+                    message: message,
+                    subject: `${name} ${surname}`
+                })
+            })
+            .catch(error => {
+                console.error(error)
+            });
+        } else {
+            triedToSend = true;
+        }
+    }
 </script>
 
-<section class="min-h-screen mb-12 xl:mb-0" id="contact">
+<section class="min-h-screen mb-12" id="contact">
     <div class="m-auto my-10 text-center">
         <h2 class="text-2xl md:text-4xl lg:text-5xl font-light text-dark">{$_("form.header")}</h2>
         <h3 class="text-sm md:text-xl lg:text-2xl text-dark">{$_("form.description")}</h3>
@@ -43,31 +69,36 @@
             <div class="text-white flex flex-col lg:flex-row p-5 -mx-4 flex-wrap w-full">
                 <div class="px-4 my-4 flex-1/2">
                     <label for="name" class="font-semibold text-xs text-light">{$_("form.form.name").toUpperCase()}</label>
-                    <input type="text" id="name" class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.name")}>
+                    <input type="text" id="name" class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.name")} bind:value={name} />
                 </div>
                 <div class="px-4 my-4 flex-1/2">
                     <label for="surname" class="font-semibold text-xs text-light">{$_("form.form.surname").toUpperCase()}</label>
-                    <input type="text" id="surname" class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.surname")}>
+                    <input type="text" id="surname" class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.surname")} bind:value={surname} />
                 </div>
                 <div class="px-4 my-4 flex-1/2">
                     <label for="email" class="font-semibold text-xs text-light">{$_("form.form.email").toUpperCase()}</label>
-                    <input type="text" id="email"class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.email")}>
+                    <input type="text" id="email"class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.email")} bind:value={email} />
                 </div>
                 <div class="px-4 my-4 flex-1/2">
                     <label for="phone" class="font-semibold text-xs text-light">{$_("form.form.phone").toUpperCase()}</label>
-                    <input type="text" id="phone"class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.phone")}>
+                    <input type="text" id="phone"class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.phone")} bind:value={phone} />
                 </div>
                 <div class="px-4 my-4 flex-2/2">
                     <label for="message" class="font-semibold text-xs text-light">{$_("form.form.message").toUpperCase()}</label>
-                    <textarea id="message" class="w-full p-2 leading-relaxed text-black h-24 bg-white border-none rounded-md resize-none" placeholder={$_("form.form.message")} />
+                    <textarea id="message" class="w-full p-2 leading-relaxed text-black h-24 bg-white border-none rounded-md resize-none" placeholder={$_("form.form.message")} bind:value={message} />
                 </div>
                 <div class="px-4 my-4 flex-2/2">
-                    <input type="checkbox" />
-                    <span class="pl-1 text-sm font-semibold">{$_("form.form.privacy")} <a href="https://docs.google.com/document/d/1bnxOXVHx54XLblR6ZMMVRtHaewmt3CC4fmrkdvxEdEA/edit" class="hover:underline text-hoverColorDark">{$_("form.form.privacy-link")}</a></span>
+                    <input type="checkbox" bind:checked={privacy} on:change={() => triedToSend = false} />
+                    <span class="pl-1 text-sm font-semibold">{$_("form.form.privacy")}
+                        <a href="https://docs.google.com/document/d/1bnxOXVHx54XLblR6ZMMVRtHaewmt3CC4fmrkdvxEdEA/edit" class="hover:underline text-hoverColorDark">{$_("form.form.privacy-link")}</a>
+                        <span class="text-red-600">*</span>
+                    </span>
+                </div>
+                <div class="px-4 -mt-2 mb-2 text-sm font-semibold flex-2/2 text-red-600" class:hidden={!triedToSend}>
+                    {$_("form.form.privacy-notification")}
                 </div>
                 <div class="px-4 flex-2/2">
-                    <!-- TODO: Remove "disabled" when api will be finished -->
-                    <button class="text-dark bg-white py-1 px-2 rounded select-none cursor-pointer hover:bg-hoverColor" disabled>{$_("form.form.submit")}</button>
+                    <button class="text-dark bg-white py-1 px-2 rounded select-none cursor-pointer hover:bg-hoverColor" on:click={() => sendForm()}>{$_("form.form.submit")}</button>
                 </div>
             </div>
         </div>

@@ -65,6 +65,7 @@
       "message": "Message",
       "privacy": "By checking this box, you agree to our",
       "privacy-link": "privacy policy",
+      "privacy-notification": "You must agree to our privacy policy!",
       "submit": "Submit"
     },
     "details": {

@@ -1,16 +1,16 @@
 <script lang="ts">
-import {_} from "svelte-i18n";
-import {onMount} from "svelte";
-import {categories} from "$lib/stores/store";
+import { _ } from "svelte-i18n";
+import { onMount } from "svelte";
+import { categories } from "$lib/stores/store";
 
 onMount(()=> {
-    fetch('https://api.kpbat.com/v1/gallery/categories')
-        .then(response => response.json())
-        .then(data => {
-            categories.set(data)
-        }).catch(error => {
-            console.log(error);
-        });
+  fetch('https://api.kpbat.com/v1/gallery/categories')
+    .then(response => response.json())
+    .then(data => {
+      categories.set(data)
+    }).catch(error => {
+      console.error(error);
+    });
 })
 
 </script>
