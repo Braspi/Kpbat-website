@@ -47,6 +47,7 @@
       "message": "Message",
       "privacy": "En cochant cette case, vous acceptez notre",
       "privacy-link": "politique de confidentialité",
+      "privacy-notification": "Vous devez accepter notre politique de confidentialité!",
       "submit": "Envoyer"
     },
     "details": {
