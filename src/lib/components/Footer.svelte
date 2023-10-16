@@ -8,7 +8,7 @@
 
 <section class="w-full bg-dark text-light relative h-128 sm:h-52 md:h-72" >
     <a href="/" >
-        <img src="icon/logo/LOGO3.jpg" alt="logo-left" class="absolute w-32 left-[10%] top-[7%] sm:left-[5%] md:w-40 lg:w-44 lg:h-36 md:top-10 md:inline-block">
+        <img src="/icon/logo/LOGO3.jpg" alt="logo-left" class="absolute w-32 left-[10%] top-[7%] sm:left-[5%] md:w-40 lg:w-44 lg:h-36 md:top-10 md:inline-block">
     </a>
     <div class="flex flex-col items-center absolute text-lg right-[15%] top-[10%] sm:flex-row sm:right-[30%] sm:top-[28%] sm:gap-4 md:text-2xl md:right-[29%] md:top-[32%] lg:right-[29%] lg:top-[35%] lg:gap-14 xl:text-3xl xl:right-[36%]">
         <a href="/" class="uppercase hover:text-hoverColor transition duration-100"> {$_('footer.home')}</a>
