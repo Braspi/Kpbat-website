@@ -11,7 +11,7 @@ import { generateGallery } from "$lib/utils/generateGallery";
   <a href="/gallery">
     <div class="flex flex-wrap gap-6 md:gap-10 m-auto justify-center pb-8 lg:pb-0">
         {#each generateGallery() as gallery}
-          <img src={gallery.src} alt={gallery.alt} class="w-[80%] lg:w-[40%] xl:w-[25%] shadow-lg hover:scale-95 transition-transform duration-200"/>
+          <img src={gallery.src} alt={gallery.alt} width="100%" height="100%" class="w-[80%] lg:w-[40%] xl:w-[25%] shadow-lg hover:scale-95 transition-transform duration-200"/>
         {/each}
     </div>
   </a>

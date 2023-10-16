@@ -29,7 +29,7 @@
     <Splide {options}>
         {#each slides as slide}
             <SplideSlide>
-                <img src={slide.src} alt={slide.alt} class="brightness-50 h-screen w-screen bg-center object-cover"/>
+                <img src={slide.src} alt={slide.alt} height="100%" width="100%" class="brightness-50 h-screen w-screen bg-center object-cover"/>
             </SplideSlide>
         {/each}
     </Splide>
