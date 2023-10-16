@@ -2,7 +2,7 @@
     import { Splide, SplideSlide } from '@splidejs/svelte-splide';
     import { onMount } from 'svelte';
     import { page } from '$app/stores';
-    import { images } from "$lib/stores/store";
+    import { images, type ApiImage, type ImageData } from "$lib/stores/store";
     import { categoryName } from "$lib/stores/store";
 
     let main: Splide;
@@ -38,19 +38,19 @@
         fetch(`https://api.kpbat.com/v1/gallery/categories/${$page.params.id}`)
             .then(response => response.json())
             .then(data => {
-                const slides = [];
+                const slides: ImageData[] = [];
                 console.log(data.images)
-                data.images.forEach(image =>{
+                data.images.forEach((image: ApiImage) =>{
                     slides.push({
                         src: `https://api.kpbat.com/resources/category_${image.category_id}/${image.file_name}`,
                         alt: image.file_name
                     })
                 })
-                images.set(slides)
+                images.set(slides);
                 categoryName.set(data.display_name)
             }).catch(error => {
-            console.log(error);
-        });
+                console.error(error);
+            });
     } );
 </script>
 <section class="min-h-screen bg-light">
