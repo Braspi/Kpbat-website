@@ -24,7 +24,7 @@ onMount(()=> {
     <div class="flex flex-wrap gap-6 md:gap-10 m-auto justify-center pb-8 lg:pb-12">
       {#each $categories as category}
         <div class="relative w-[80%] lg:w-[40%] xl:w-[25%] shadow-lg hover:scale-95 transition-transform duration-200">
-          <a href="/gallery/{ category.id }">
+          <a href="/gallery/images/?id={ category.id }">
               <img src="https://api.kpbat.com/resources/category_{category.id}/{category.primary_image}" alt="test" class="w-full max-h-80 object-cover" />
               <div class="absolute inset-0 bg-white opacity-50"></div>
               <div class="absolute inset-0 flex items-center justify-center">
