@@ -4,11 +4,11 @@
   import { page } from '$app/stores';
   import { images, type ApiImage, type ImageData } from "$lib/stores/store";
   import { categoryName } from "$lib/stores/store";
-
-  const currentId = $page.url.searchParams.get("id");
+  import { goto } from '$app/navigation';
 
   let main: Splide;
   let thumbs: SplideSlide;
+  let currentId: string | null;
 
   const mainOptions = {
     type      : 'loop',
@@ -34,6 +34,8 @@
   };
 
   onMount(() => {
+    currentId = $page.url.searchParams.get("id");
+
     if (main && thumbs) {
       main.sync(thumbs.splide);
     }
@@ -52,6 +54,7 @@
         categoryName.set(data.display_name)
       }).catch(error => {
         console.error(error);
+        goto("/gallery");
       });
   });
 </script>
