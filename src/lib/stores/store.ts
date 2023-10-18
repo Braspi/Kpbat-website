@@ -24,3 +24,5 @@ export const categories: Writable<ApiCategories[]> = writable([]);
 export const images: Writable<ImageData[]> = writable([]);
 
 export const categoryName: Writable<string> = writable("");
+
+export const isLoading: Writable<boolean> = writable(true);

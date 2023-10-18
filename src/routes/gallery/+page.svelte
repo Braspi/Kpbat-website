@@ -25,11 +25,11 @@ onMount(()=> {
       {#each $categories as category}
         <div class="relative w-[80%] lg:w-[40%] xl:w-[25%] shadow-lg hover:scale-95 transition-transform duration-200">
           <a href="/gallery/images/?id={ category.id }">
-              <img src="https://api.kpbat.com/resources/category_{category.id}/{category.primary_image}" alt="test" class="w-full max-h-80 object-cover" />
-              <div class="absolute inset-0 bg-white opacity-50"></div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <p class="text-center text-2xl z-10 lg:text-3xl">{ category.display_name }</p>
-              </div>
+            <img src="https://api.kpbat.com/resources/category_{category.id}/{category.primary_image}" alt="test" class="w-full max-h-80 object-cover" />
+            <div class="absolute inset-0 bg-white opacity-50"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <p class="text-center text-2xl z-10 lg:text-3xl">{ category.display_name }</p>
+            </div>
           </a>
         </div>
       {/each}

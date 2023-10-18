@@ -12,6 +12,7 @@
 
     let slides = data.slides;
     let options: Options = {
+        type: 'loop',
         rewind: true,
         width: '100vw',
         height: '100vh',

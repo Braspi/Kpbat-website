@@ -3,7 +3,6 @@
 
     import Fa from 'svelte-fa';
     import { faFacebook, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons';
-
 </script>
 
 <section class="w-full bg-dark text-light relative h-128 sm:h-52 md:h-72" >
