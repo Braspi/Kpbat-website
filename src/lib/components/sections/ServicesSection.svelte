@@ -2,7 +2,13 @@
     import { _ } from "svelte-i18n";
     import Fa from "svelte-fa";
     import { sections as s } from "$lib/utils/getSections";
+    import {goto} from "$app/navigation";
     let sections = s;
+
+    function redirectTo(id:number) {
+        goto(`/services?id=${id}`);
+    }
+
 </script>
 
 <section class="min-h-[60vh] pt-0.5 mb-14 xl:mb-0 bg-dark">
@@ -21,6 +27,8 @@
                 on:focus={() => section.hovered = true}
                 on:mouseout={() => section.hovered = false}
                 on:blur={() => section.hovered = false}
+                on:click={() => redirectTo(section.id)}
+                on:keypress={() => redirectTo(section.id)}
             >
                 <Fa icon={section.icon} class="{section.hovered ? 'text-white' : ''} text-4xl text-dark"/>
                 <p class="text-2xl text-dark" class:text-white={section.hovered}>{$_(section.text)}</p>

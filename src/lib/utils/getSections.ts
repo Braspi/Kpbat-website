@@ -1,13 +1,32 @@
-import { faPlugCircleBolt , faWrench , faTrowelBricks, faTree, faPersonThroughWindow , faHouseCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPlugCircleBolt,
+  faWrench,
+  faTrowelBricks,
+  faTree,
+  faPersonThroughWindow,
+  faHouseCircleCheck,
+  type IconDefinition
+} from "@fortawesome/free-solid-svg-icons";
 
-export const sections = [
+export type Section = {
+  id: number,
+  icon: IconDefinition,
+  text: string,
+  hovered: boolean,
+  content: SectionContent
+}
+type SectionContent = {
+  description: string
+}
+
+export const sections:Section[] = [
   {
     id: 1,
     icon: faPlugCircleBolt,
     text: "services.sections.electricity.title",
     hovered: false,
     content: {
-      description: "",
+      description: "services.sections.electricity.description",
     }
   },
   {
@@ -16,7 +35,7 @@ export const sections = [
     text: "services.sections.plumbing.title",
     hovered: false,
     content: {
-      description: ""
+      description: "services.sections.electricity.description"
     }
   },
   {
@@ -25,7 +44,7 @@ export const sections = [
     text: "services.sections.insulation.title",
     hovered: false,
     content: {
-      description: ""
+      description: "services.sections.electricity.description"
     }
   },
   {
@@ -34,7 +53,7 @@ export const sections = [
     text: "services.sections.masonry.title",
     hovered: false,
     content: {
-      description: "",
+      description: "services.sections.electricity.description",
     }
   },
   {
@@ -43,7 +62,7 @@ export const sections = [
     text: "services.sections.flooring.title",
     hovered: false,
     content: {
-      description: "",
+      description: "services.sections.electricity.description",
     }
   },
   {
@@ -52,7 +71,7 @@ export const sections = [
     text: "services.sections.windows.title",
     hovered: false,
     content: {
-      description: "",
+      description: "services.sections.electricity.description",
     }
   }
 ]

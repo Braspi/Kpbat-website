@@ -6,11 +6,11 @@
     import {onMount} from "svelte";
 
     let navDetached = true;
-    let showBurgerDiv: boolean = false;
+    let showBurgerDiv = false;
 
     onMount(()=> {
         page.subscribe(() =>{
-            if($page.url.pathname.includes('gallery')){
+            if($page.url.pathname.includes('gallery') || $page.url.pathname.includes('services')){
                 navDetached = false;
                 return
             }
@@ -19,7 +19,7 @@
     })
 
     function onScroll() {
-        if($page.url.pathname.includes('gallery')){return}
+        if($page.url.pathname.includes('gallery')|| $page.url.pathname.includes('services')){return}
         let header = document.getElementById('nav')?.getBoundingClientRect() as DOMRect;
         navDetached = (header.height / 8) > window.scrollY;
     }
