@@ -17,7 +17,8 @@ const config = {
 			entries: [
 				"/",
 				"/gallery",
-				"/gallery/images"
+				"/gallery/images",
+				"/services"
 			]
 		},
 		paths: {
