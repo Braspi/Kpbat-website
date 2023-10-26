@@ -24,7 +24,7 @@
       { #if section}
         <div class="text-left col-span-2 row-span-1 w-[90%] ">
           <h2 class="text-4xl md:text-5xl font-bold text-dark">{ $_(section.text) }</h2>
-          <h3 class="text-xl md:text-md lg:text-xl font-light text-dark pt-2">{ $_(section.content.description) }</h3>
+          <h3 class="text-xl md:text-md lg:text-xl font-light text-dark pt-2">{ $_(section.description) }</h3>
         </div>
         <div class= "col-span-1 row-span-1 hidden md:inline-block">
           <img src="/img/ourservices/{ sectionId }.jpg" alt="services" class="h-[300px] w-[400px] rounded-md">

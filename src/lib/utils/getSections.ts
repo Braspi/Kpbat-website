@@ -13,9 +13,6 @@ export type Section = {
   icon: IconDefinition,
   text: string,
   hovered: boolean,
-  content: SectionContent
-}
-type SectionContent = {
   description: string
 }
 
@@ -25,54 +22,42 @@ export const sections:Section[] = [
     icon: faPlugCircleBolt,
     text: "services.sections.electricity.title",
     hovered: false,
-    content: {
-      description: "services.sections.electricity.description",
-    }
+    description: "services.sections.electricity.description"
   },
   {
     id: 2,
     icon: faWrench,
     text: "services.sections.plumbing.title",
     hovered: false,
-    content: {
-      description: "services.sections.electricity.description"
-    }
+    description: "services.sections.plumbing.description"
   },
   {
     id: 3,
     icon: faHouseCircleCheck,
     text: "services.sections.insulation.title",
     hovered: false,
-    content: {
-      description: "services.sections.electricity.description"
-    }
+    description: "services.sections.insulation.description"
   },
   {
     id: 4,
     icon: faTrowelBricks,
     text: "services.sections.masonry.title",
     hovered: false,
-    content: {
-      description: "services.sections.electricity.description",
-    }
+    description: "services.sections.masonry.description",
   },
   {
     id: 5,
     icon: faTree,
     text: "services.sections.flooring.title",
     hovered: false,
-    content: {
-      description: "services.sections.electricity.description",
-    }
+    description: "services.sections.flooring.description",
   },
   {
     id: 6,
     icon: faPersonThroughWindow,
     text: "services.sections.windows.title",
     hovered: false,
-    content: {
-      description: "services.sections.electricity.description",
-    }
+    description: "services.sections.windows.description",
   }
 ]
 

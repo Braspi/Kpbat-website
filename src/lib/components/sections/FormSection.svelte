@@ -120,7 +120,7 @@ g<script lang="ts">
                         <Fa icon={faEnvelope} class="m-auto my-3.5" />
                     </span>
                     <h2 class="ml-3">
-                        <p class="text-light">{$_("form.details.phone")}</p>
+                        <p class="text-light">{$_("form.details.email")}</p>
                         <p class="font-bold">k.p.batiment@gmail.com</p>
                     </h2>
                 </div>
