@@ -1,4 +1,4 @@
-g<script lang="ts">
+<script lang="ts">
     import { _ } from 'svelte-i18n'
     import Fa from 'svelte-fa';
     import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -8,14 +8,19 @@ g<script lang="ts">
 
     let map: any;
 
-    let name: string = "";
-    let surname: string = "";
-    let email: string = "";
-    let phone: string = "";
-    let message: string = "";
-
     let privacy: boolean = false;
-    let triedToSend: boolean = false;
+    let triedToSend: boolean = false
+    let alert: string = null
+    let isSuccess: boolean = false;
+
+    let request = {
+        email: '',
+        first_name: '',
+        last_name: '',
+        phone_number: '',
+        subject: '',
+        message: ''
+    }
 
     onMount(async () => {
         if (browser) {
@@ -38,21 +43,33 @@ g<script lang="ts">
     });
 
     function sendForm() {
+        isSuccess = false
         if (privacy) {
-            fetch("https://api.kpbat.com/v1/contact", {
+            fetch("https://api.kpbat.com/contact", {
                 method: "POST",
-                body: JSON.stringify({
-                    email: email,
-                    phoneNumber: phone,
-                    message: message,
-                    subject: `${name} ${surname}`
-                })
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(request)
             })
-            .catch(error => {
+            .then(response => {
+                if (response.status == 200) {
+                    isSuccess = true
+                    alert = "Message sent!"
+                    Object.keys(request).forEach(key => request[key] = "")
+                    return null
+                }
+                return response.json()
+            }).then(data => {
+                if (data == null) return
+                alert = data['message']
+                isSuccess = false
+            }).catch(error => {
                 console.error(error)
             });
         } else {
             triedToSend = true;
+            alert = $_("form.form.privacy-notification")
         }
     }
 </script>
@@ -62,6 +79,7 @@ g<script lang="ts">
         <h2 class="text-2xl md:text-4xl lg:text-5xl font-light text-dark">{$_("form.header")}</h2>
         <h3 class="text-sm md:text-xl lg:text-2xl text-dark">{$_("form.description")}</h3>
     </div>
+    <div class:hidden={alert == null} class:bg-green-400={isSuccess} class:bg-red-400={!isSuccess} class="m-auto my-10 text-center w-3/5 py-2 rounded-md">{alert}</div>
     <div class="w-4/5 lg:w-3/5 bg-dark m-auto rounded flex flex-col xl:flex-row">
         <div class="p-3 lg:p-7 flex-[5]">
             <p class="pl-5 text-light text-xl font-semibold">{$_("form.form.title")}</p>
@@ -69,23 +87,23 @@ g<script lang="ts">
             <div class="text-white flex flex-col lg:flex-row p-5 -mx-4 flex-wrap w-full">
                 <div class="px-4 my-4 flex-1/2">
                     <label for="name" class="font-semibold text-xs text-light">{$_("form.form.name").toUpperCase()}</label>
-                    <input type="text" id="name" class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.name")} bind:value={name} />
+                    <input type="text" id="name" class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.name")} bind:value={request.first_name} />
                 </div>
                 <div class="px-4 my-4 flex-1/2">
                     <label for="surname" class="font-semibold text-xs text-light">{$_("form.form.surname").toUpperCase()}</label>
-                    <input type="text" id="surname" class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.surname")} bind:value={surname} />
+                    <input type="text" id="surname" class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.surname")} bind:value={request.last_name} />
                 </div>
                 <div class="px-4 my-4 flex-1/2">
                     <label for="email" class="font-semibold text-xs text-light">{$_("form.form.email").toUpperCase()}</label>
-                    <input type="text" id="email"class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.email")} bind:value={email} />
+                    <input type="text" id="email"class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.email")} bind:value={request.email} />
                 </div>
                 <div class="px-4 my-4 flex-1/2">
                     <label for="phone" class="font-semibold text-xs text-light">{$_("form.form.phone").toUpperCase()}</label>
-                    <input type="text" id="phone"class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.phone")} bind:value={phone} />
+                    <input type="text" id="phone" class="w-full p-2 leading-relaxed text-black h-11 bg-white border-none rounded-md" placeholder={$_("form.form.phone")} bind:value={request.phone_number} />
                 </div>
                 <div class="px-4 my-4 flex-2/2">
                     <label for="message" class="font-semibold text-xs text-light">{$_("form.form.message").toUpperCase()}</label>
-                    <textarea id="message" class="w-full p-2 leading-relaxed text-black h-24 bg-white border-none rounded-md resize-none" placeholder={$_("form.form.message")} bind:value={message} />
+                    <textarea id="message" class="w-full p-2 leading-relaxed text-black h-24 bg-white border-none rounded-md resize-none" placeholder={$_("form.form.message")} bind:value={request.message} />
                 </div>
                 <div class="px-4 my-4 flex-2/2">
                     <input type="checkbox" bind:checked={privacy} on:change={() => triedToSend = false} />
@@ -94,9 +112,9 @@ g<script lang="ts">
                         <span class="text-red-600">*</span>
                     </span>
                 </div>
-                <div class="px-4 -mt-2 mb-2 text-sm font-semibold flex-2/2 text-red-600" class:hidden={!triedToSend}>
-                    {$_("form.form.privacy-notification")}
-                </div>
+<!--                <div class="px-4 -mt-2 mb-2 text-sm font-semibold flex-2/2 text-red-600" class:hidden={!triedToSend}>-->
+<!--                    {alert}-->
+<!--                </div>-->
                 <div class="px-4 flex-2/2">
                     <button class="text-dark bg-white py-1 px-2 rounded select-none cursor-pointer hover:bg-hoverColor" on:click={() => sendForm()}>{$_("form.form.submit")}</button>
                 </div>
