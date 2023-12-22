@@ -1,7 +1,7 @@
 <script lang="ts">
 import { _ } from "svelte-i18n";
 import { onMount } from "svelte";
-import { categories } from "$lib/stores/store";
+import {categories} from "$lib/stores/store";
 
 onMount(()=> {
   fetch('https://api.kpbat.com/v1/gallery/categories')
@@ -12,6 +12,9 @@ onMount(()=> {
       console.error(error);
     });
 })
+
+
+
 
 </script>
 
@@ -34,5 +37,12 @@ onMount(()=> {
         </div>
       {/each}
     </div>
+<!--    <div class="">-->
+<!--      {#each Array(totalPages) as _, idx}-->
+<!--        <a href="/galley/{idx}">-->
+<!--          {idx + 1}-->
+<!--        </a>-->
+<!--      {/each}-->
+<!--    </div>-->
   </div>
 </section>
