@@ -8,7 +8,7 @@ import { generateGallery } from "$lib/utils/generateGallery";
     <h2 class="text-2xl md:text-4xl lg:text-5xl font-light ">{$_("gallery-sec.header")}</h2>
     <h3 class="text-sm md:text-xl lg:text-2xl whitespace-normal">{$_("gallery-sec.description")}</h3>
   </div>
-  <a href="/gallery">
+  <a href="/gallery" aria-label="gallery">
     <div class="flex flex-wrap gap-6 md:gap-10 m-auto justify-center pb-8 lg:pb-0">
         {#each generateGallery() as gallery}
           <img src={gallery.src} alt={gallery.alt} width="100%" height="100%" class="w-[80%] lg:w-[40%] xl:w-[25%] shadow-lg hover:scale-95 transition-transform duration-200"/>

@@ -14,9 +14,9 @@
         <a href="/#contact" class="uppercase hover:text-hoverColor transition duration-100"> {$_('footer.contact')}</a>
     </div>
     <div class="flex flex-row gap-2 absolute text-2xl top-[35%] left-1/2 -translate-x-1/2 sm:left-[85%] sm:top-[24%] md:left-[88%] md:text-3xl md:top-[29%] lg:text-4xl xl:top-[30%]">
-        <a href="https://www.facebook.com/kpbat" class="w-10 h-10 bg-mediaColor md:w-11 md:h-11 lg:w-14 lg:h-14 rounded hover:scale-110 transform transition-transform duration-300"><Fa icon="{ faFacebook }" class="text-white ml-2 mt-2 md:ml-2 md:mt-2 lg:ml-2.5 lg:mt-2.5 "/></a>
-        <a href="https://www.instagram.com/kp_bat/" class="w-10 h-10 bg-mediaColor md:w-11 md:h-11 lg:w-14 lg:h-14 rounded hover:scale-110 transform transition-transform duration-300"><Fa icon="{ faInstagram }" class="text-white ml-2 mt-2 md:ml-2.5 md:mt-2 lg:ml-3 lg:mt-2.5"/></a>
-        <a href="https://www.pinterest.fr/kp_bat/" class="w-10 h-10 bg-mediaColor md:w-11 md:h-11 lg:w-14 lg:h-14 rounded hover:scale-110 transform transition-transform duration-300"><Fa icon="{ faPinterest }" class="text-white ml-2 mt-2 md:ml-2 md:mt-2 lg:ml-2.5 lg:mt-2.5"/></a>
+        <a href="https://www.facebook.com/kpbat" aria-label="facebook-link" class="w-10 h-10 bg-mediaColor md:w-11 md:h-11 lg:w-14 lg:h-14 rounded hover:scale-110 transform transition-transform duration-300"><Fa icon="{ faFacebook }" class="text-white ml-2 mt-2 md:ml-2 md:mt-2 lg:ml-2.5 lg:mt-2.5 "/></a>
+        <a href="https://www.instagram.com/kp_bat/" aria-label="instagram-link"  class="w-10 h-10 bg-mediaColor md:w-11 md:h-11 lg:w-14 lg:h-14 rounded hover:scale-110 transform transition-transform duration-300"><Fa icon="{ faInstagram }" class="text-white ml-2 mt-2 md:ml-2.5 md:mt-2 lg:ml-3 lg:mt-2.5"/></a>
+        <a href="https://www.pinterest.fr/kp_bat/" aria-label="pin-link" class="w-10 h-10 bg-mediaColor md:w-11 md:h-11 lg:w-14 lg:h-14 rounded hover:scale-110 transform transition-transform duration-300"><Fa icon="{ faPinterest }" class="text-white ml-2 mt-2 md:ml-2 md:mt-2 lg:ml-2.5 lg:mt-2.5"/></a>
     </div>
     <hr class="absolute left-1/2 -translate-x-1/2 border-t-2 w-[85%] top-[47%] sm:w-[91%] sm:top-[65%] md:top-[75%]">
     <div class="absolute left-1/2 -translate-x-1/2 text-ms bottom-24 font-medium text-center sm:text-left sm:w-[52%] sm:left-[30%] sm:bottom-4 sm:text-xs sm:font-normal md:bottom-8 md:left-[31%] lg:text-sm lg:bottom-6 lg:w-[55%] lg:left-[33%] lg:font-medium xl:text-base">

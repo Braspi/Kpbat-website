@@ -106,7 +106,7 @@
                     <textarea id="message" class="w-full p-2 leading-relaxed text-black h-24 bg-white border-none rounded-md resize-none" placeholder={$_("form.form.message")} bind:value={request.message} />
                 </div>
                 <div class="px-4 my-4 flex-2/2">
-                    <input type="checkbox" bind:checked={privacy} on:change={() => triedToSend = false} />
+                    <label for="checked"><input type="checkbox" id="checked" aria-label="checked" bind:checked={privacy} on:change={() => triedToSend = false} /> </label>
                     <span class="pl-1 text-sm font-semibold">{$_("form.form.privacy")}
                         <a href="https://docs.google.com/document/d/1bnxOXVHx54XLblR6ZMMVRtHaewmt3CC4fmrkdvxEdEA/edit" class="hover:underline text-hoverColorDark">{$_("form.form.privacy-link")}</a>
                         <span class="text-red-600">*</span>
