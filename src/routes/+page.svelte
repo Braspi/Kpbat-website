@@ -20,20 +20,38 @@
     }
 
     $: (width <= 768) ? options.arrows = false : options.arrows = true;
+
+    let text = "KPBAT •  Minimalist • Modern •";
+    let repeatedText = Array(5).fill(text).join(" ");
 </script>
 
-<main class="relative z-0">
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center">
-        <h1 class="text-white text-2xl font-semibold md:text-4xl lg:text-6xl whitespace-nowrap">{$_('header.main')}</h1>
-        <h2 class="text-white text-base md:text-xl lg:text-2xl">{$_('header.bottom')}</h2>
+<main class="relative z-0 h-screen w-screen flex justify-center items-center">
+    <div class="h-[85vh] w-[95vw]">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center">
+            <h1 class="text-white text-2xl font-bold md:text-4xl lg:text-7xl whitespace-nowrap">{$_('header.main')}</h1>
+            <h2 class="text-white text-base md:text-xl lg:text-2xl opacity-80">{$_('header.bottom')}</h2>
+        </div>
+        <div class="absolute bottom-8 right-8 z-10 w-64 h-64 items-center justify-center">
+            <svg viewBox="0 0 100 100" class="w-full h-full animate-spin-slow">
+                <defs>
+                    <path id="circlePath" d="M 50,50 m -35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
+                </defs>
+                <text font-size="7" fill="gray" font-weight="600" >
+                    <textPath href="#circlePath" startOffset="0%">
+                        {repeatedText}
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+        <Splide {options}>
+            {#each slides as slide}
+                <SplideSlide>
+                    <img src={slide.src} alt={slide.alt} aria-label="img-main" height="100%" width="100%" class="brightness-50 rounded-[40px] h-[85vh] w-[95vw] bg-center object-cover"/>
+                </SplideSlide>
+            {/each}
+        </Splide>
     </div>
-    <Splide {options}>
-        {#each slides as slide}
-            <SplideSlide>
-                <img src={slide.src} alt={slide.alt} aria-label="img-main" height="100%" width="100%" class="brightness-50 h-screen w-screen bg-center object-cover"/>
-            </SplideSlide>
-        {/each}
-    </Splide>
+
 </main>
 
 <About />
@@ -42,3 +60,18 @@
 <FormSection/>
 
 <svelte:window bind:outerWidth={width} />
+
+<style>
+    @keyframes spin-slow {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .animate-spin-slow {
+        animation: spin-slow 50s linear infinite;
+    }
+</style>

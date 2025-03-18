@@ -32,12 +32,11 @@
     function showBurger() {
       showBurgerDiv = !showBurgerDiv;
     }
-
 </script>
 
 <div id="nav" class="w-full h-24 fixed top-0 z-10 transition duration-500 text-light md:h-28 {navDetachedClass}">
     <a href="/">
-        <img src="/icon/logo/LOGO2_alpha.png" alt="logo" class="absolute select-none top-1 left-0 h-24 md:left-1 md:h-28 md:top-0.5">
+        <img src="/icon/logo/LOGO2_alpha.png" alt="logo" class="absolute select-none top-1 left-0 h-24 md:left-2 md:h-28 md:top-0.5">
     </a>
     <div class="hidden font-normal md:flex flex-col items-center h-full">
         <div class="mt-auto mb-auto">
@@ -79,6 +78,7 @@
             </div>
         </div>
     {/if}
+
 </div>
 
 <!-- Attach scroll to document -->
