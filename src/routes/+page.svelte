@@ -41,7 +41,7 @@
 </script>
 
 
-<main class="relative z-0 h-[90vh] w-screen flex justify-center items-center">
+<main class="relative z-0 h-screen md:h-[90vh] mb-6 w-[90vw] mx-auto md:w-screen flex justify-center items-center">
   <div class="w-full h-full md:-h-[15vh] md:w-[95vw]">
     <div class="absolute top-[40vh] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center">
       <h1 class="text-white text-2xl font-bold md:text-4xl lg:text-7xl whitespace-nowrap">{$_('header.main')}</h1>
@@ -68,7 +68,7 @@
 
     <Splide {options} bind:this={splideRef}>
       {#each slides as slide}
-        <SplideSlide class="overflow-hidden md:rounded-[40px] md:mt-4 w-screen md:h-[85vh] md:w-[95vw]">
+        <SplideSlide class="overflow-hidden rounded-[40px] md:mt-4 h-screen w-[80vw] md:h-[85vh] md:w-[95vw]">
           <img
                   src={slide.src}
                   alt={slide.alt}
