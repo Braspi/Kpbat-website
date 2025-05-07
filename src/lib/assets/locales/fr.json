@@ -1,7 +1,11 @@
 {
   "header": {
     "main": "On trouvera une solution",
-    "bottom": "Clairement la meilleure entreprise de rénovation du marché."
+    "bottom": "Clairement la meilleure entreprise de rénovation du marché.",
+    "contact": {
+      "text": "Vous souhaitez donner un nouveau look à votre maison ? Faites confiance à KP BAT pour tous vos besoins en rénovation. Notre équipe expérimentée propose des services allant de simples retouches de peinture à des rénovations complètes, garantissant que votre vision prenne vie avec qualité et précision.",
+      "btn": "Contactez-nous!"
+    }
   },
   "nav": {
     "gallery": "Galerie",
@@ -10,6 +14,23 @@
     "language": "Choisissez la langue"
   },
   "about": {
+    "left": {
+      "first": "Moderne",
+      "last": "Minimaliste"
+    },
+    "right": {
+      "top": {
+        "header": "Rénovation Élégante",
+        "desc": "Des espaces pensés où chaque détail fonctionne en harmonie",
+        "title": "Transformez votre maison en galerie de style"
+      },
+      "bottom": {
+        "header": "Rénovations Raffinées",
+        "desc": "Découvrez la beauté de chaque détail de votre espace renouvelé"
+      }
+    }
+  },
+  "about-old": {
     "name": "Oui sommes nous?",
     "header": "Votre entreprise spécialisée dans la rénovation.",
     "line1": "Vous cherchez à rénover votre intérieur pour donner une nouvelle vie à votre maison ou votre appartement ? Faites confiance à KP BAT.",

@@ -1,7 +1,11 @@
 {
   "header": {
     "main": "We'll find a solution",
-    "bottom": "Clearly the best renovation company in the market."
+    "bottom": "Clearly the best renovation company in the market.",
+    "contact": {
+      "text": "Looking to give your home a fresh new look? Trust KP BAT for all your renovation needs. Our experienced team offers services ranging from simple painting updates to full-scale renovations, ensuring your vision comes to life with quality and precision.",
+      "btn": "Contact now!"
+    }
   },
   "nav": {
     "gallery": "Gallery",
@@ -10,6 +14,23 @@
     "language": "Choose language"
   },
   "about": {
+    "left": {
+      "first": "Modern",
+      "last": "Minimalist"
+    },
+    "right": {
+      "top": {
+        "header": "Elegant Renovation",
+        "desc": "Thoughtfully designed spaces where every detail works in harmony",
+        "title": "Make your home a style gallery"
+      },
+      "bottom": {
+        "header": "Refined Renovations",
+        "desc": "Experience beauty in every detail of your renewed space"
+      }
+    }
+  },
+  "about-old": {
     "name": "Who are we?",
     "header": "Our company specializes in renovation.",
     "line1": "Are you looking to renovate your interior to give a new life to your house or apartment? Trust KP BAT.",

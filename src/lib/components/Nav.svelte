@@ -26,7 +26,7 @@
     navDetached = (header.height / 8) > window.scrollY;
   }
 
-  $: navDetachedClass = navDetached ? '' : 'bg-dark shadow-nav';
+  // $: navDetachedClass = navDetached ? '' : 'bg-shadow border-shadow backdrop-blur-xl text-white';
 
   function changeLang(lang: string) {
     locale.set(lang)
@@ -38,19 +38,19 @@
 </script>
 
 <div id="nav"
-     class="w-full h-24 fixed top-0 z-10 transition duration-500 md:h-[85px] {navDetachedClass} text-black flex items-center justify-between px-4 md:px-11">
+     class="w-full h-24 relative top-0 z-10 transition duration-500 md:h-[85px] text-black flex items-center justify-between px-4 md:px-11">
   <a href="/" class="flex items-center">
     <img src="/icon/logo/LOGO2-black-alpha.png" alt="logo" class="select-none h-12 ml-6 md:h-[92px]">
   </a>
 
   <div class="flex gap-6 items-center">
-    <div class="hidden md:flex flex-1 justify-end space-x-8 text-xl font-medium opacity-80">
+    <div class="hidden md:flex space-x-8 text-xl font-medium opacity-80">
       <a href="/" class="no-underline hover:text-hoverColor transition duration-100">{$_('nav.home')}</a>
       <a href="/gallery" class="no-underline hover:text-hoverColor transition duration-100">{$_('nav.gallery')}</a>
       <a href="/#contact" class="no-underline hover:text-hoverColor transition duration-100">{$_('nav.contact')}</a>
     </div>
 
-    <div class="border-r border-opacity-30 border-black h-8"/>
+    <div class="border-r border-opacity-30 border-black h-8" />
 
     <div class="hidden md:flex space-x-2">
       <div role="button" tabindex="0" on:click="{() => changeLang('fr')}" on:keypress="{() => changeLang('fr')}"
