@@ -38,6 +38,18 @@
     "line3": "We offer a wide range of services to meet all your needs: painting, flooring, plumbing, electricity, carpentry, kitchen and bathroom design, etc.",
     "line4": "We work with high-quality materials to ensure a durable and aesthetic result. We listen to your needs and expectations to offer you a tailor-made service that is adapted to your budget and constraints."
   },
+  "about-company": {
+    "top": {
+      "title": "Transform Your Interior",
+      "label": "Expertise • Renovation"
+    },
+    "middle": {
+      "text": "Give a new life to your house or apartment with our skilled team. KP BAT supports you in all your renovation projects: painting, electricity, plumbing, carpentry, custom kitchens and bathrooms."
+    },
+    "bottom": {
+      "button": "About Us"
+    }
+  },
   "gallery-sec": {
     "header": "Our lastest works",
     "description": "Browse our gallery, and see why we're worthy of your trust!",

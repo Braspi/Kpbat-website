@@ -38,6 +38,18 @@
     "line3": "Nous vous proposons une large gamme de services pour répondre à tous vos besoins peinture, revêtement de sol, plomberie, électricité, menuiserie, aménagement de cuisine et salle de bain, etc.",
     "line4": "Nous travaillons avec des matériaux de qualité supérieure pour garantir un résultat durable et esthétique. Nous sommes à l'écoute de vos besoins et de vos attentes pour vous offrir une prestation sur mesure, adaptée à votre budget et à vos contraintes."
   },
+  "about-company": {
+    "top": {
+      "title": "Transformez Votre Intérieur",
+      "label": "Expertise • Rénovation"
+    },
+    "middle": {
+      "text": "Donnez une nouvelle vie à votre maison ou appartement avec notre équipe qualifiée. KP BAT vous accompagne dans tous vos projets de rénovation : peinture, électricité, plomberie, menuiserie, cuisines et salles de bains sur mesure."
+    },
+    "bottom": {
+      "button": "À Propos de Nous"
+    }
+  },
   "gallery-sec": {
     "header": "Découvrez nos dernières réalisations!",
     "description": "Parcourez notre galerie et voyez pourquoi nous méritons votre confiance",

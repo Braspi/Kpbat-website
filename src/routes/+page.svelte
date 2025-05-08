@@ -8,6 +8,7 @@
   import GallerySection from "$lib/components/sections/GallerySection.svelte";
   import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
   import Fa from "svelte-fa";
+  import RealizationsSection from "$lib/components/sections/RealizationsSection.svelte";
 
   export let data;
 
@@ -85,6 +86,7 @@
 </main>
 
 <About/>
+<RealizationsSection/>
 <GallerySection/>
 <ServicesSection/>
 <FormSection/>
