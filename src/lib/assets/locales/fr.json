@@ -50,6 +50,37 @@
       "button": "À Propos de Nous"
     }
   },
+  "our-services": {
+    "title": "Découvrez nos services d'experts",
+    "desc": "Nous proposons des services et produits qui répondent aux plus hauts standards en matière de qualité, de fiabilité et de durabilité, garantissant une valeur à long terme et des performances exceptionnelles dans les moindres détails.",
+    "btn": "Voir plus",
+    "sections": {
+      "electricity": {
+        "title": "Électricité",
+        "description": "Vous recherchez un professionnel pour la mise aux normes de votre installation électrique ? Faites appel à notre entreprise pour tous vos travaux d’électricité générale, en maison ou en appartement. Nous intervenons en neuf comme en rénovation :\n- Conception et installation électrique neuve\n- Rénovation des installations existantes\n- Mise en conformité\n- Entretien et dépannage électrique\n- Mise en service de VMC et interphones"
+      },
+      "plumbing": {
+        "title": "Plomberie / Chauffage",
+        "description": "Nous nous occupons de la fourniture et de l’installation de votre plomberie et de vos équipements sanitaires, que ce soit pour un usage privé ou professionnel. Nous assurons également la pose de chaudières, chauffe-eaux et radiateurs."
+      },
+      "insulation": {
+        "title": "Isolation intérieure/extérieure",
+        "description": "Nous réalisons l’isolation des murs par l’intérieur, qui consiste à ajouter des matériaux isolants (laine de verre, laine de roche, liège, chanvre) à l’intérieur de votre maison.\nNous intervenons aussi pour l’isolation par l’extérieur, en installant des panneaux isolants tout autour de la maison. Cela inclut des isolants synthétiques (plastique), naturels (végétaux ou animaux comme la laine de mouton), et minéraux comme la laine de verre."
+      },
+      "masonry": {
+        "title": "Maçonnerie",
+        "description": "Nous sommes spécialisés dans la maçonnerie artisanale, les ouvertures, les renforcements, les dalles et chapes, la démolition, le travail de la pierre, les murs porteurs, les fondations, la couverture, les ouvertures structurelles et la charpente. Nous proposons également des consultations avec un ingénieur."
+      },
+      "flooring": {
+        "title": "Revêtements de sol",
+        "description": "Notre équipe prendra soin de vos sols : carrelage, parquet, lino, sol PVC, moquette ou béton ciré. Nous veillons à une bonne préparation des surfaces, au choix du matériau adapté et à une exécution soignée."
+      },
+      "windows": {
+        "title": "Fenêtres",
+        "description": "La fenêtre est un élément essentiel de votre habitation. Toutes nos fenêtres sont personnalisables (couleurs, formes, sens d’ouverture) pour s’intégrer parfaitement à votre façade et renforcer l’harmonie de votre maison.\n\nQue ce soit en PVC, bois, aluminium ou bois-alu, vous pouvez choisir parmi de nombreux styles, options et accessoires. Optez également pour la praticité des volets roulants pour réaliser des économies d’énergie, améliorer votre confort et renforcer votre sécurité."
+      }
+    }
+  },
   "gallery-sec": {
     "header": "Découvrez nos dernières réalisations!",
     "description": "Parcourez notre galerie et voyez pourquoi nous méritons votre confiance",
@@ -104,8 +135,8 @@
     "details": {
       "title": "Contactez-nous",
       "description": "Détails du contact",
-      "phone": "contact par téléphone",
-      "email": "contact par e-mail"
+      "phone": "Contact par téléphone",
+      "email": "Contact par e-mail"
     }
   },
   "footer": {

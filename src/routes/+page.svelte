@@ -9,6 +9,8 @@
   import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
   import Fa from "svelte-fa";
   import RealizationsSection from "$lib/components/sections/RealizationsSection.svelte";
+  import OurServise from "$lib/components/sections/OurServise.svelte";
+  import ContactSection from "$lib/components/sections/ContactSection.svelte";
 
   export let data;
 
@@ -88,8 +90,8 @@
 <About/>
 <RealizationsSection/>
 <GallerySection/>
-<ServicesSection/>
-<FormSection/>
+<OurServise/>
+<ContactSection/>
 
 <svelte:window bind:outerWidth={width}/>
 

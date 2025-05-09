@@ -50,6 +50,37 @@
       "button": "About Us"
     }
   },
+  "our-services": {
+    "title": "Explore Our Expert Services",
+    "desc": "We provide services and products that set high standards for quality, reliability, and durability, ensuring long-term value and exceptional performance in every detail.",
+    "btn": "View More",
+    "sections": {
+      "electricity": {
+        "title": "Electricity",
+        "description": "Are you looking for a professional to bring your electrical installation up to standard? Trust our company for all general electrical work in your house or apartment. We work on both new builds and renovations:\n- Design and installation of new electrical systems\n- Renovation of existing electrical installations\n- Compliance upgrades\n- Electrical maintenance and troubleshooting\n- Commissioning of VMC systems and intercoms"
+      },
+      "plumbing": {
+        "title": "Plumbing/Heating",
+        "description": "We supply and install plumbing and sanitary equipment for both private and professional use. At the same time, we take care of delivering and installing your boilers, water heaters, and radiators."
+      },
+      "insulation": {
+        "title": "Interior/Exterior",
+        "description": "We carry out wall insulation work from the inside, which involves adding insulation (glass wool, rock wool, cork, hemp) inside the house.\nWe also handle exterior wall insulation by installing insulating panels on the entire outer surface of the house. These include synthetic (plastic) insulators, natural ones (plant- or animal-based like sheep's wool), and mineral types like glass wool."
+      },
+      "masonry": {
+        "title": "Masonry",
+        "description": "We specialize in artisan masonry, wall openings, reinforcement, slabs and screeds, demolition, stonework, load-bearing walls, foundations, roofing, structural openings, and carpentry. Our offer also includes consultations with an engineer."
+      },
+      "flooring": {
+        "title": "Flooring",
+        "description": "Our team takes great care of your flooring. Whether it’s tiling, parquet, linoleum, PVC flooring, carpet, or polished concrete, we ensure proper surface preparation, material compatibility, and workmanship quality."
+      },
+      "windows": {
+        "title": "Windows",
+        "description": "Windows play a key role and are an essential element of your home. All our windows are fully customizable (colours, shapes, opening directions). They blend seamlessly with your façade and contribute to the harmony of your home.\n\nWhether in PVC, wood, aluminium, or wood-aluminium, you can choose from many styles, options, and accessories. Opt for practical roller shutters to improve comfort, increase energy savings, and enhance security."
+      }
+    }
+  },
   "gallery-sec": {
     "header": "Our lastest works",
     "description": "Browse our gallery, and see why we're worthy of your trust!",
@@ -104,8 +135,8 @@
     "details": {
       "title": "Contact details",
       "description": "Our contact data",
-      "phone": "contact telephone",
-      "email": "contact email"
+      "phone": "Contact telephone",
+      "email": "Contact email"
     }
   },
   "footer": {

@@ -26,7 +26,7 @@ import {_} from 'svelte-i18n'
 
 </script>
 
-<section class="flex px-8 py-5">
+<section class="flex px-16 py-5">
   <div class="flex-2">
     <img src="img/1.jpg" class="rounded-[30px] lg:rounded-[40px] w-[850px] z-0 h-[800px] object-cover" alt="img-2">
   </div>

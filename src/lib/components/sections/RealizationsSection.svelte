@@ -22,9 +22,8 @@
     });
   });
 
-  let hasAnimated = false; // zapobiega ponownemu uruchomieniu animacji
+  let hasAnimated = false;
 
-  // Trigger przy wejściu w widok
   let sectionRef;
 
   onMount(() => {
