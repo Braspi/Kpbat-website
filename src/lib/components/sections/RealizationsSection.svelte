@@ -54,7 +54,7 @@
     <div class="flex justify-between flex-wrap gap-8">
       {#each rawStats as stat, i}
         <div class="p-6">
-          <p class="text-9xl font-medium text-black mb-2">
+          <p class="text-7xl lg:text-9xl font-medium text-black mb-2">
             {Math.floor(values[i])}{stat.suffix}
           </p>
           <p class="text-xl text-black opacity-50">{stat.label}</p>

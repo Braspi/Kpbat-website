@@ -116,6 +116,18 @@
       }
     }
   },
+  "contact": {
+    "title": "Contact",
+    "desc": "Vous avez une question ou un projet en tête ? Nous sommes là pour vous aider, n'hésitez pas à nous contacter et nous vous répondrons dans les plus brefs délais.",
+    "desc2": "Construisons quelque chose de grand ensemble",
+    "phone": "Numéro de téléphone",
+    "email": "Adresse e-mail",
+    "copy-phone": "Copier le numéro de téléphone",
+    "copy-email": "Copier l'adresse e-mail",
+    "copy-btn": "Copie",
+    "copied-btn": "Copié!"
+  },
+
   "form": {
     "header": "Envoyez-nous un message",
     "description": "Si vous avez un problème, écrivez-nous!",
@@ -140,9 +152,11 @@
     }
   },
   "footer": {
-    "home" : "Accueil",
-    "gallery": "Galerie",
-    "contact" : "Contact"
+    "title": "Engagez la conversation avec nous.\n",
+    "desc": "Dans un monde global fondé sur la communication, une marque doit dépasser ses frontières, s’ouvrir à de nouvelles expériences et oser être différente. Rencontrer les esprits les plus brillants de son époque est la manière la plus efficace de nourrir la créativité.",
+    "contact": "Contact",
+    "customer": "Service Client",
+    "media": "Réseaux Sociaux"
   },
   "gallery": {
     "header": "Sélectionnez les catégories",

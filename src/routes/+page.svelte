@@ -2,9 +2,7 @@
   import { onMount, onDestroy } from 'svelte';
   import { _ } from 'svelte-i18n';
   import { Splide, SplideSlide, type Options, type SplideComponent } from '@splidejs/svelte-splide';
-  import ServicesSection from "$lib/components/sections/ServicesSection.svelte";
   import About from "$lib/components/sections/AboutSection.svelte";
-  import FormSection from "$lib/components/sections/FormSection.svelte";
   import GallerySection from "$lib/components/sections/GallerySection.svelte";
   import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
   import Fa from "svelte-fa";

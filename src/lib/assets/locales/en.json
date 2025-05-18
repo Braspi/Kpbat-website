@@ -116,6 +116,17 @@
       }
     }
   },
+  "contact": {
+    "title": "Contact",
+    "desc": "Have a question or a project in mind? We're here to help, feel free to reach out and we'll get back to you as soon as possible.\n",
+    "desc2": "Let’s build something great together\n",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "copy-phone": "Copy phone number",
+    "copy-email": "Copy email address",
+    "copy-btn": "Copy",
+    "copied-btn": "Copied!"
+  },
   "form": {
     "header": "Get in Touch with Us",
     "description": "If you have any questions, please write to us!",
@@ -140,9 +151,11 @@
     }
   },
   "footer": {
-    "home" : "Home",
-    "gallery": "Gallery",
-    "contact" : "Contact"
+    "title": "Engage with Us in Conversation.\n",
+    "desc": "In a global world based on communication, a brand must look beyond its borders, open up to new experiences, and dare to be different. Meeting the brightest minds of one's time is the most effective way to nurture creativity.",
+    "contact": "Contact",
+    "customer": "Customer Service",
+    "media": "Social Media"
   },
   "gallery": {
     "header": "Select categories",

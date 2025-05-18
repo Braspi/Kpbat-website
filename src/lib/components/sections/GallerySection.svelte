@@ -1,50 +1,34 @@
-<!--<script lang="ts">-->
-<!--import { _ } from "svelte-i18n";-->
-<!--import { generateGallery } from "$lib/utils/generateGallery";-->
-<!--</script>-->
-
-<!--<section class="min-h-[180vh] pt-0.5 xl:mb-0 bg-light lg:min-h-[90vh]">-->
-<!--  <div class="m-auto my-10 text-center text-dark">-->
-<!--    <h2 class="text-2xl md:text-4xl lg:text-5xl font-light ">{$_("gallery-sec.header")}</h2>-->
-<!--    <h3 class="text-sm md:text-xl lg:text-2xl whitespace-normal">{$_("gallery-sec.description")}</h3>-->
-<!--  </div>-->
-<!--  <a href="/gallery" aria-label="gallery">-->
-<!--    <div class="flex flex-wrap gap-6 md:gap-10 m-auto justify-center pb-8 lg:pb-0">-->
-<!--        {#each generateGallery() as gallery}-->
-<!--          <img src={gallery.src} alt={gallery.alt} width="100%" height="100%" class="w-[80%] lg:w-[40%] xl:w-[25%] shadow-lg hover:scale-95 transition-transform duration-200"/>-->
-<!--        {/each}-->
-<!--    </div>-->
-<!--  </a>-->
-<!--</section>-->
-
 <script lang="ts">
-
-import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
-import Fa from "svelte-fa";
-import {_} from 'svelte-i18n'
-
-
+    import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+    import Fa from "svelte-fa";
+    import { _ } from 'svelte-i18n';
 </script>
 
-<section class="flex px-16 py-5">
-  <div class="flex-2">
-    <img src="img/1.jpg" class="rounded-[30px] lg:rounded-[40px] w-[850px] z-0 h-[800px] object-cover" alt="img-2">
+<section class="flex flex-col xl:flex-row px-4 sm:px-10 lg:px-12 py-10 gap-10 xl:gap-16">
+  <div class="w-full xl:flex-2 max-w-[100%] xl:max-w-[850px]">
+    <img
+        src="img/1.jpg"
+        class="rounded-[30px] lg:rounded-[40px] w-full h-[300px] sm:h-[500px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] object-cover mx-auto"
+        alt="img-2"
+    >
   </div>
-  <div class="flex-1 flex items-center -translate-y-12">
-    <section class="px-6 md:px-16 bg-white text-black">
-      <div class="max-w-3xl mx-auto">
-        <p class="text-xl uppercase tracking-wide mb-8 font-medium text-black">{$_('about-company.top.label')}</p>
-        <h1 class="text-5xl md:text-8xl font-medium leading-tight mb-8 mt-8">
+
+  <div class="w-full xl:flex-1 flex items-center xl:-translate-y-12">
+    <section class="px-4 sm:px-8 md:px-12 xl:px-0 bg-white text-black w-full">
+      <div class="max-w-3xl 2xl:max-w-5xl mx-auto">
+        <p class="text-base sm:text-lg md:text-xl uppercase tracking-wide mb-6 font-medium text-black">
+          {$_('about-company.top.label')}
+        </p>
+        <h1 class="text-4xl sm:text-6xl md:text-7xl xl:text-8xl font-medium leading-tight mb-6 mt-8">
           {$_('about-company.top.title')}<br />
         </h1>
-        <p class="text-xl mb-8 w-[30vw]">
+        <p class="text-base sm:text-lg md:text-xl mb-8 w-full max-w-[90vw] md:max-w-[70vw] lg:max-w-[60vw] xl:max-w-[40vw] 2xl:max-w-[35vw]">
           {$_('about-company.middle.text')}
         </p>
-        <a href="#about" class="flex items-center gap-3 w-fit px-6 py-3 bg-black text-white font-medium rounded hover:bg-gray-900 transition">
-          {$_('about-company.bottom.button')} <Fa icon={faArrowRight} class="text-white text-xl" />
+        <a href="#about" class="flex items-center text-sm lg:text-md gap-3 w-fit px-6 py-3 bg-black text-white font-medium rounded hover:bg-gray-900 transition">
+          {$_('about-company.bottom.button')} <Fa icon={faArrowRight} class="text-lg text-white lg:text-xl" />
         </a>
       </div>
     </section>
-
   </div>
 </section>
