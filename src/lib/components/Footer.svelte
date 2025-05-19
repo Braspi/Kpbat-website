@@ -42,7 +42,7 @@
       </div>
 
       <div class="w-full lg:w-[500px] flex-shrink-0">
-        <img src="img/carousel/1.jpg" alt="img-2" class="rounded-[20px] md:rounded-[30px] lg:rounded-[40px] w-full object-cover h-[250px] md:h-[350px] lg:h-[100%]" />
+        <img src="/img/carousel/1.jpg" alt="img-2" class="rounded-[20px] md:rounded-[30px] lg:rounded-[40px] w-full object-cover h-[250px] md:h-[350px] lg:h-[100%]" />
       </div>
     </div>
 

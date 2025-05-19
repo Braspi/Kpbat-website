@@ -4,7 +4,7 @@
   import Fa from "svelte-fa";
 </script>
 
-<section class="flex flex-col lg:flex-row gap-5 lg:gap-10 px-4 sm:px-6 lg:px-14 pb-5 lg:pb-10 max-h-[1800px]">
+<section id="about" class="flex flex-col lg:flex-row gap-5 lg:gap-10 px-4 sm:px-6 lg:px-14 pb-5 lg:pb-10 max-h-[1800px]">
   <div class="lg:flex-2 relative w-full">
     <div class="absolute z-10 bottom-16 lg:bottom-24 left-0 bg-white h-[70px] lg:h-[100px] w-[220px] sm:w-[280px] lg:w-[320px] rounded-tr-[30px] lg:rounded-tr-[45px] flex justify-start items-center">
       <p class="font-semibold text-4xl sm:text-5xl lg:text-6xl translate-y-1 lg:translate-y-2">{$_('about.left.first')}</p>

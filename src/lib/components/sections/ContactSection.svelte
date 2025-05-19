@@ -37,7 +37,7 @@
   }
 </script>
 
-<section class="px-4 sm:px-8 md:px-12 lg:px-16 my-16">
+<section id="contact" class="px-4 sm:px-8 md:px-12 lg:px-16 my-16">
   <div class="flex flex-col lg:flex-row gap-6 mb-10">
     <div class="flex-1 flex flex-col items-start justify-start">
       <button class="mb-4 flex items-center gap-2 text-sm sm:text-md font-medium bg-black text-white px-4 sm:px-6 py-2 rounded hover:bg-gray-800 transition">

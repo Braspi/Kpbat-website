@@ -69,7 +69,7 @@
       <a href="/#contact" class="no-underline hover:text-hoverColor transition duration-100">{$_('nav.contact')}</a>
     </div>
 
-    <div class="hidden md:inline-block border-r border-opacity-30 border-black h-8" />
+    <div class="border-r border-opacity-30 border-black h-8" />
 
     <div class="hidden md:flex space-x-2">
       <div role="button" tabindex="0" on:click="{() => changeLang('fr')}" on:keypress="{() => changeLang('fr')}"
@@ -118,9 +118,9 @@
                class="w-16 h-10 cursor-pointer select-none hover:brightness-75 transition duration-150">
             <img src="/icon/flags/france.webp" alt="france-flag" class="w-full h-full rounded shadow" />
           </div>
-          <div role="button" tabindex="0" on:click={() => changeLang('en')} on:keypress={() => changeLang('en')}
-               class="w-16 h-10 cursor-pointer select-none hover:brightness-75 transition duration-150">
-            <img src="/icon/flags/united_kingdom.webp" alt="english-flag" class="w-full h-full rounded shadow" />
+          <div role="button" tabindex="0" on:click="{() => changeLang('en')}" on:keypress="{() => changeLang('en')}"
+               class="w-20 h-20 cursor-pointer select-none hover:brightness-50">
+            <img src="/icon/flags/united_kingdom.webp" alt="english-flag" class="w-full h-full">
           </div>
         </div>
       </div>
