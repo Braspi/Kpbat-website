@@ -48,7 +48,7 @@
       <h1 class="text-white text-2xl font-bold md:text-4xl lg:text-7xl whitespace-nowrap">{$_('header.main')}</h1>
       <h2 class="text-white text-base md:text-xl lg:text-2xl opacity-80">{$_('header.bottom')}</h2>
     </div>
-    <div class="hidden lg:inline lg:absolute bottom-24 right-24 z-10 w-64 h-64 items-center justify-center">
+    <div class="hidden lg:inline lg:absolute bottom-14 right-20 z-10 w-64 h-64 items-center justify-center">
       <svg viewBox="0 0 100 100" class="w-full h-full animate-spin-slow">
         <defs>
           <path id="circlePath" d="M 50,50 m -35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0"/>
@@ -60,8 +60,8 @@
         </text>
       </svg>
     </div>
-    <div class="hidden lg:inline lg:absolute bottom-24 left-24 z-10 border text-white p-6 text-md border-opacity-5 bg-shadow border-shadow backdrop-blur-2xl xl:w-[30vw] rounded-xl">
-      <p>{$_('header.contact.text')}</p>
+    <div class="hidden lg:inline lg:absolute bottom-14 left-20 z-10 border text-white p-6 text-md border-opacity-5 bg-shadow border-shadow backdrop-blur-2xl xl:w-[30vw] rounded-xl">
+      <p class="text-sm lg:text-md">{$_('header.contact.text')}</p>
       <button class="flex items-center gap-4 bg-black px-4 rounded-xl text-md mt-3">{$_('header.contact.btn')}
         <Fa icon={faArrowRight} class="m-auto my-3.5"/>
       </button>
