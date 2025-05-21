@@ -30,7 +30,7 @@
       }
     }
   },
-  "about-old": {
+  "about-us": {
     "name": "Oui sommes nous?",
     "header": "Votre entreprise spécialisée dans la rénovation.",
     "line1": "Vous cherchez à rénover votre intérieur pour donner une nouvelle vie à votre maison ou votre appartement ? Faites confiance à KP BAT.",
@@ -119,7 +119,7 @@
   "contact": {
     "title": "Contact",
     "desc": "Vous avez une question ou un projet en tête ? Nous sommes là pour vous aider, n'hésitez pas à nous contacter et nous vous répondrons dans les plus brefs délais.",
-    "desc2": "Construisons quelque chose de grand ensemble",
+    "desc2": "Créons quelque chose de grand!",
     "phone": "Numéro de téléphone",
     "email": "Adresse e-mail",
     "copy-phone": "Copier le numéro de téléphone",

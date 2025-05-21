@@ -8,7 +8,7 @@
   <div class="w-full xl:flex-2 max-w-[100%] xl:max-w-[850px]">
     <img
         src="img/1.jpg"
-        class="rounded-[30px] lg:rounded-[40px] w-full h-[300px] sm:h-[500px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] object-cover mx-auto"
+        class="rounded-[30px] lg:rounded-[40px] w-full h-[300px] sm:h-[500px] lg:h-[700px] xl:h-[800px] object-cover mx-auto"
         alt="img-2"
     >
   </div>
@@ -25,7 +25,7 @@
         <p class="text-base sm:text-lg md:text-xl mb-8 w-full max-w-[90vw] md:max-w-[70vw] lg:max-w-[60vw] xl:max-w-[40vw] 2xl:max-w-[35vw]">
           {$_('about-company.middle.text')}
         </p>
-        <a href="#about" class="flex items-center text-sm lg:text-md gap-3 w-fit px-6 py-3 bg-black text-white font-medium rounded hover:bg-gray-900 transition">
+        <a href="/about" class="flex items-center text-sm lg:text-md gap-3 w-fit px-6 py-3 bg-black text-white font-medium rounded hover:bg-gray-900 transition">
           {$_('about-company.bottom.button')} <Fa icon={faArrowRight} class="text-lg text-white lg:text-xl" />
         </a>
       </div>

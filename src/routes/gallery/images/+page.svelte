@@ -57,7 +57,7 @@
       });
   });
 </script>
-<section class="min-h-screen bg-light">
+<section class="min-h-screen">
   <div class="relative z-0 top-20 lg:top-24">
     <div class="m-auto my-10 text-center text-dark">
       <h2 class="text-3xl md:text-4xl lg:text-5xl font-normal">{ $categoryName }</h2>

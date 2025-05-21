@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { _, locale } from 'svelte-i18n'
+    import { _, locale } from 'svelte-i18n';
     import Fa from 'svelte-fa';
     import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
     import { page } from "$app/stores";
@@ -8,16 +8,34 @@
     let navDetached = true;
     let showBurgerDiv = false;
 
+    function changeLang(lang: string) {
+        locale.set(lang);
+        if (typeof localStorage !== 'undefined') {
+            localStorage.setItem('lang', lang);
+        }
+    }
+
     onMount(() => {
-        page.subscribe(() => {
+        if (typeof localStorage !== 'undefined') {
+            const savedLang = localStorage.getItem('lang');
+            if (savedLang) {
+                locale.set(savedLang);
+            }
+        }
+
+        const unsubscribe = page.subscribe(($page) => {
             if (typeof window === 'undefined') return;
 
             if ($page.url.pathname.includes('gallery') || $page.url.pathname.includes('services')) {
                 navDetached = false;
-                return;
+            } else {
+                onScroll();
             }
-            onScroll();
         });
+
+        return () => {
+            unsubscribe();
+        };
     });
 
     onDestroy(() => {
@@ -46,14 +64,11 @@
         }
     }
 
-    function changeLang(lang: string) {
-        locale.set(lang);
-    }
-
     function showBurger() {
         showBurgerDiv = !showBurgerDiv;
     }
 </script>
+
 
 
 <div id="nav"
