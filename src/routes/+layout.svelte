@@ -5,7 +5,7 @@
   import Nav from "$lib/components/Nav.svelte";
   import Footer from "$lib/components/Footer.svelte";
   import { afterNavigate, beforeNavigate } from '$app/navigation';
-  import { tick } from 'svelte';
+  import { tick} from 'svelte';
   let loading = false;
 
   const MIN_LOADING_TIME = 500;
@@ -15,15 +15,23 @@
   });
 
   afterNavigate(async () => {
-      const start = performance.now();
-      await tick();
-      const elapsed = performance.now() - start;
-      const delay = MIN_LOADING_TIME - elapsed;
-      if (delay > 0) {
-          await new Promise(r => setTimeout(r, delay));
-      }
-      loading = false;
+    const start = performance.now();
+    await tick();
+    const elapsed = performance.now() - start;
+    const delay = MIN_LOADING_TIME - elapsed;
+    if (delay > 0) {
+      await new Promise(r => setTimeout(r, delay));
+    }
+    loading = false;
+
+    window.scrollTo({ top: 0, left: 0 });
+
+    if (window.location.hash) {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
   });
+
+
 </script>
 
 {#if loading}
