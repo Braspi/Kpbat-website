@@ -7,7 +7,7 @@
 <section class="flex flex-col xl:flex-row px-4 sm:px-6 md:px-10 lg:px-12 py-10 gap-10 xl:gap-16 min-h-screen md:-translate-y-12">
   <div class="flex justify-center items-center w-full xl:flex-2 max-w-full xl:max-w-[850px]">
     <img
-        src="/img/1.jpg"
+        src="/img/1.webp"
         class="rounded-[20px] sm:rounded-[30px] lg:rounded-[40px] w-full h-[250px] sm:h-[400px] md:h-[500px] lg:h-[650px] xl:h-[750px] object-cover mx-auto"
         alt="img-2"
     >

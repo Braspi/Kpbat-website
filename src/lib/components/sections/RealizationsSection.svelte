@@ -4,9 +4,8 @@
   import { onMount } from 'svelte';
 
   const rawStats = [
-    { value: 500, label: "Products", suffix: "+" },
-    { value: 20, label: "Projects", suffix: "+" },
-    { value: 50, label: "Satisfied Customers", suffix: "+" },
+    { value: 200, label: "Projects", suffix: "+" },
+    { value: 180, label: "Satisfied Customers", suffix: "+" },
     { value: 1, label: "Top 1 in Paris", suffix: "st" }
   ];
 
@@ -57,7 +56,7 @@
           <p class="text-7xl lg:text-9xl font-medium text-black mb-2">
             {Math.floor(values[i])}{stat.suffix}
           </p>
-          <p class="text-xl text-black opacity-50">{stat.label}</p>
+          <p class="text-xl text-black opacity-80">{stat.label}</p>
         </div>
       {/each}
     </div>

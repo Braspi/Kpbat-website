@@ -12,7 +12,7 @@
     <div class="absolute z-10 bottom-0 left-0 bg-white h-[70px] lg:h-[100px] w-[280px] sm:w-[350px] lg:w-[400px] rounded-tr-[30px] lg:rounded-tr-[40px] flex justify-start items-center">
       <p class="font-semibold text-4xl sm:text-5xl lg:text-6xl">{$_('about.left.last')}</p>
     </div>
-    <img src="img/carousel/4.jpg" alt="hi-png" class="rounded-[30px] lg:rounded-[40px] w-full h-[400px] sm:h-[500px] lg:h-[80vh] object-cover">
+    <img src="img/carousel/4.webp" alt="hi-png" class="rounded-[30px] lg:rounded-[40px] w-full h-[400px] sm:h-[500px] lg:h-[80vh] object-cover">
   </div>
 
   <div class="flex-1 flex flex-col gap-5 lg:gap-0 lg:justify-between w-full">
@@ -30,7 +30,7 @@
 
     <div class="relative h-[300px] sm:h-[350px] xl:h-[40vh]">
       <div class="absolute flex justify-center items-center -right-2 -bottom-2 bg-white rounded-full h-14 w-14 sm:h-16 sm:w-16 lg:h-20 lg:w-20 z-30">
-        <a href="/gallery" class="bg-black w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full flex justify-center items-center">
+        <a href="/gallery" aria-label="Aller à la galerie" class="bg-black w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full flex justify-center items-center">
           <Fa icon={faArrowRight} class="text-white text-xl sm:text-2xl" />
         </a>
       </div>
@@ -43,7 +43,7 @@
         </p>
       </div>
 
-      <img src="img/carousel/2.jpg" class="rounded-[30px] lg:rounded-[40px] z-0 w-full h-full lg:w-[1150px] object-cover" alt="img-2">
+      <img src="img/carousel/2.webp" class="rounded-[30px] lg:rounded-[40px] z-0 w-full h-full lg:w-[1150px] object-cover" alt="img-2">
 
       <div class="absolute inset-0 bg-black opacity-40 z-20 rounded-[30px] lg:rounded-[40px] flex items-center justify-center">
       </div>
