@@ -29,7 +29,7 @@
         </div>
         <div class="col-span-1 row-span-1 hidden md:inline-block">
           <img
-              src={`/img/ourservices/${sectionId}.jpg`}
+              src={`/img/ourservices/${sectionId}.webp`}
               alt="services"
               class="h-[300px] w-[400px] rounded-md"
           />

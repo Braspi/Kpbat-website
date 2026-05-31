@@ -74,7 +74,7 @@
 <div id="nav"
      class="w-full h-24 relative top-0 z-10 transition duration-500 md:h-[85px] text-black flex items-center justify-between px-4 md:px-11">
   <a href="/" class="flex items-center">
-    <img src="/icon/logo/LOGO2-black-alpha.png" alt="logo" class="select-none h-[75px] -translate-x-4 md:-translate-x-0 ml-6 md:h-[92px]">
+    <img src="/icon/logo/LOGO2-black-alpha.webp" alt="logo" class="select-none h-[75px] -translate-x-4 md:-translate-x-0 ml-6 md:h-[92px]">
   </a>
 
   <div class="flex gap-6 items-center">
@@ -84,23 +84,23 @@
       <a href="/#contact" class="no-underline hover:text-hoverColor transition duration-100">{$_('nav.contact')}</a>
     </div>
 
-    <div class="border-r border-opacity-30 border-black h-8" />
+    <div class="hidden md:flex border-r border-opacity-30 border-black h-8" />
 
     <div class="hidden md:flex space-x-2">
       <div role="button" tabindex="0" on:click="{() => changeLang('fr')}" on:keypress="{() => changeLang('fr')}"
            class="w-14 h-9 p-1.5 cursor-pointer select-none hover:brightness-50 transition duration-100">
-        <img src="/icon/flags/france.webp" alt="france-flag" class="w-full h-full">
+        <img src="/icon/flags/france.webp" loading="lazy" alt="france-flag" class="w-full h-full">
       </div>
       <div role="button" tabindex="0" on:click="{() => changeLang('en')}" on:keypress="{() => changeLang('en')}"
            class="w-14 h-9 p-1.5 cursor-pointer select-none hover:brightness-50 transition duration-100">
-        <img src="/icon/flags/united_kingdom.webp" alt="english-flag" class="w-full h-full">
+        <img src="/icon/flags/united_kingdom.webp" loading="lazy" alt="english-flag" class="w-full h-full">
       </div>
     </div>
   </div>
 
-  <div class="block md:hidden cursor-pointer -translate-x-6 translate-y-1" on:click={showBurger} on:keypress={showBurger} role="button" tabindex="0">
+  <button class="block md:hidden cursor-pointer -translate-x-6 translate-y-1" on:click={showBurger} on:keypress={showBurger} tabindex="0" aria-label="Open menu">
     <Fa icon={faBars} size="2x"/>
-  </div>
+  </button>
 
   {#if showBurgerDiv}
     <div class="fixed inset-0 w-full h-full bg-black/70 backdrop-blur-2xl flex flex-col items-center pt-20 pb-10 px-6 space-y-10 z-30 text-white animate-fade-in">
@@ -112,7 +112,7 @@
         <Fa icon={faXmark} size="lg"/>
       </button>
 
-      <img src="/icon/logo/LOGO1_alpha.png" alt="logo"
+      <img src="/icon/logo/LOGO1_alpha.webp" alt="logo"
            class="h-28 mb-6 opacity-90 drop-shadow-md pointer-events-none select-none" />
 
       <nav class="flex flex-col items-center space-y-6">

@@ -42,8 +42,15 @@
       </div>
 
       <div class="w-full lg:w-[500px] flex-shrink-0">
-        <img src="/img/carousel/1.jpg" alt="img-2" class="rounded-[20px] md:rounded-[30px] lg:rounded-[40px] w-full object-cover h-[250px] md:h-[350px] lg:h-[100%]" />
+        <img
+            src="/img/carousel/1.webp"
+            alt="Intérieur moderne et minimaliste avec de grandes fenêtres"
+            class="rounded-[20px] md:rounded-[30px] lg:rounded-[40px] w-full object-cover h-[250px] md:h-[350px] lg:h-[100%]"
+            width="500"
+            height="350"
+        />
       </div>
+
     </div>
 
     <div class="mt-16 flex flex-col lg:flex-row justify-between gap-10">
@@ -66,7 +73,7 @@
       <div class="flex flex-col items-center lg:items-end text-center lg:text-right">
         <p class="text-5xl md:text-7xl font-bold">KPBAT</p>
         <p class="text-sm md:text-base">&copy; 2022 - {new Date().getFullYear()} KP BAT. All Rights Reserved</p>
-        <span class="opacity-70 text-sm">Design and code - <a href="https://github.com/Braspi/" class="underline">Jeremiasz Cz.</a></span>
+        <span class="opacity-70 text-sm">Design and code - <a href="https://ycode.pl" class="underline">ycode.pl</a></span>
         <p class="opacity-70 text-xs">last update - 2025</p>
       </div>
     </div>

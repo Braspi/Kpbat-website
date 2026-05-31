@@ -6,12 +6,12 @@
     const sectionKeys = ['electricity', 'plumbing', 'insulation', 'masonry', 'flooring', 'windows'];
 
     const images = [
-        {image: '/img/ourservices/1.jpg', heightClass: 'h-[240px] sm:h-[340px]'},
-        {image: '/img/ourservices/2.jpg', heightClass: 'h-[240px] sm:h-[700px]'},
-        {image: '/img/ourservices/3.jpg', heightClass: 'h-[240px] sm:h-[700px]'},
-        {image: '/img/ourservices/4.jpg', heightClass: 'h-[240px] sm:h-[340px]'},
-        {image: '/img/ourservices/5.jpg', heightClass: 'h-[240px] sm:h-[340px]'},
-        {image: '/img/ourservices/6.jpg', heightClass: 'h-[240px] sm:h-[700px]'}
+        {image: '/img/ourservices/1.webp', heightClass: 'h-[240px] sm:h-[340px]'},
+        {image: '/img/ourservices/2.webp', heightClass: 'h-[240px] sm:h-[700px]'},
+        {image: '/img/ourservices/3.webp', heightClass: 'h-[240px] sm:h-[700px]'},
+        {image: '/img/ourservices/4.webp', heightClass: 'h-[240px] sm:h-[340px]'},
+        {image: '/img/ourservices/5.webp', heightClass: 'h-[240px] sm:h-[340px]'},
+        {image: '/img/ourservices/6.webp', heightClass: 'h-[240px] sm:h-[700px]'}
     ];
 
     const items = sectionKeys.map((key, index) => ({
@@ -57,6 +57,7 @@
 
         <a
             href={`/services?id=${item.id}`}
+            aria-label="Voir les services"
             class="absolute bottom-4 right-4 bg-white p-3 md:p-4 text-black rounded-full group-hover:bg-gray-200 transition"
         >
           <Fa icon={faArrowRight}/>

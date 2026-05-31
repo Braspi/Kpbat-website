@@ -36,7 +36,7 @@
 
 {#if loading}
   <div class="h-screen w-screen overflow-hidden flex justify-center items-center flex-col">
-    <img src="/icon/logo/LOGO2-black-alpha.png" alt="Loading..." class="h-32 animate-pulse" />
+    <img src="/icon/logo/LOGO2-black-alpha.webp" alt="Loading..." class="h-32 animate-pulse" />
     <div class="flex gap-4 items-center">
       <div class="flex items-center text-lg font-medium text-black gap-1 animate-pulse -translate-y-6">
         <span class="dot dot1 text-dark">.</span>

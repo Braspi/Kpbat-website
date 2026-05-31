@@ -1,47 +1,54 @@
 <script lang="ts">
-  import { onMount, onDestroy } from 'svelte';
-  import { _ } from 'svelte-i18n';
-  import { Splide, SplideSlide, type Options, type SplideComponent } from '@splidejs/svelte-splide';
-  import About from "$lib/components/sections/AboutSection.svelte";
-  import GallerySection from "$lib/components/sections/OurCompanySection.svelte";
-  import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-  import Fa from "svelte-fa";
-  import RealizationsSection from "$lib/components/sections/RealizationsSection.svelte";
-  import OurServise from "$lib/components/sections/OurServise.svelte";
-  import ContactSection from "$lib/components/sections/ContactSection.svelte";
-  import OurCompanySection from "$lib/components/sections/OurCompanySection.svelte";
+    import { onMount, onDestroy } from 'svelte';
+    import { _ } from 'svelte-i18n';
+    import { Splide, SplideSlide, type Options, type SplideComponent } from '@splidejs/svelte-splide';
+    import About from "$lib/components/sections/AboutSection.svelte";
+    import GallerySection from "$lib/components/sections/OurCompanySection.svelte";
+    import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+    import Fa from "svelte-fa";
+    import RealizationsSection from "$lib/components/sections/RealizationsSection.svelte";
+    import OurServise from "$lib/components/sections/OurServise.svelte";
+    import ContactSection from "$lib/components/sections/ContactSection.svelte";
+    import OurCompanySection from "$lib/components/sections/OurCompanySection.svelte";
 
-  export let data;
+    export let data;
 
-  let width: number;
-  let slides = data.slides;
+    let width: number;
+    let slides = data.slides;
 
-  let splideRef: SplideComponent;
-  let intervalId: NodeJS.Timer;
+    let splideRef: SplideComponent;
+    let intervalId: NodeJS.Timer;
 
-  let options: Options = {
-    type: 'loop',
-    rewind: true,
-    autoplay: false,
-    arrows: true,
-  };
+    let options: Options = {
+        type: 'loop',
+        rewind: true,
+        autoplay: false,
+        arrows: true,
+    };
 
-  $: options.arrows = width > 768;
+    $: options.arrows = width > 768;
 
-  onMount(() => {
-    intervalId = setInterval(() => {
-      splideRef?.splide?.go('>');
-    }, 8000);
-  });
+    // Nowa zmienna śledząca aktywny slajd
+    let activeIndex = 0;
 
-  onDestroy(() => {
-    clearInterval(intervalId);
-  });
+    onMount(() => {
+        // Podpięcie eventu move do aktualizacji activeIndex
+        splideRef?.splide?.on('move', (newIndex: number) => {
+            activeIndex = newIndex;
+        });
 
-  let text = "KPBAT •  Minimalist • Modern •";
-  let repeatedText = Array(5).fill(text).join(" ");
+        intervalId = setInterval(() => {
+            splideRef?.splide?.go('>');
+        }, 8000);
+    });
+
+    onDestroy(() => {
+        clearInterval(intervalId);
+    });
+
+    let text = "KPBAT •  Minimalist • Modern •";
+    let repeatedText = Array(5).fill(text).join(" ");
 </script>
-
 
 <main class="relative z-0 h-screen md:h-[90vh] mb-6 px-[3vw] mx-auto flex justify-center items-center">
   <div class="w-full h-full md:-h-[15vh]">
@@ -69,21 +76,21 @@
     </div>
 
     <Splide {options} bind:this={splideRef}>
-      {#each slides as slide}
-        <SplideSlide class="overflow-hidden rounded-[40px] md:mt-4 h-screen w-[80vw] md:h-[85vh] md:w-[95vw]">
-          <img
-                  src={slide.src}
-                  alt={slide.alt}
-                  aria-label="img-main"
-                  class="brightness-50 w-full h-full object-cover bg-center"
-          />
-        </SplideSlide>
+      {#each slides as slide, i}
+        {#if i === activeIndex}
+          <SplideSlide tag="div" class="overflow-hidden rounded-[40px] md:mt-4 h-screen w-[80vw] md:h-[85vh] md:w-[95vw]">
+            <img
+                src={slide.src}
+                alt={slide.alt}
+                loading="lazy"
+                class="brightness-50 max-h-screen w-full h-full object-cover bg-center"
+            />
+          </SplideSlide>
+        {/if}
       {/each}
     </Splide>
 
-
   </div>
-
 </main>
 
 <About/>
@@ -95,16 +102,16 @@
 <svelte:window bind:outerWidth={width}/>
 
 <style>
-  @keyframes spin-slow {
-    from {
-      transform: rotate(0deg);
+    @keyframes spin-slow {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
     }
-    to {
-      transform: rotate(360deg);
-    }
-  }
 
-  .animate-spin-slow {
-    animation: spin-slow 50s linear infinite;
-  }
+    .animate-spin-slow {
+        animation: spin-slow 50s linear infinite;
+    }
 </style>

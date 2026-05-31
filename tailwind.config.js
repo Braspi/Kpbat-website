@@ -28,7 +28,10 @@ export default {
       flex: {
         '1/2': '0 0 50%',
         '2/2': '0 0 100%',
-      }
+      },
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: []

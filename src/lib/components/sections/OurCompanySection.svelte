@@ -7,7 +7,7 @@
 <section class="flex flex-col xl:flex-row px-4 sm:px-10 lg:px-12 py-10 gap-10 xl:gap-16">
   <div class="w-full xl:flex-2 max-w-[100%] xl:max-w-[850px]">
     <img
-        src="img/1.jpg"
+        src="img/1.webp"
         class="rounded-[30px] lg:rounded-[40px] w-full h-[300px] sm:h-[500px] lg:h-[700px] xl:h-[800px] object-cover mx-auto"
         alt="img-2"
     >
